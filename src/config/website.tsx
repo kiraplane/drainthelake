@@ -83,6 +83,12 @@ export const websiteConfig: WebsiteConfig = {
         name: 'Bahasa Indonesia',
         hreflang: 'id-ID',
       },
+
+      'zh-tw': {
+        flag: '🇹🇼',
+        name: '繁體中文',
+        hreflang: 'zh-TW',
+      },
     },
   },
   blog: {
