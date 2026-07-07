@@ -6,14 +6,15 @@ import {
 } from '@/components/thanos/wiki-navigation';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import { databaseHubCards, toolCards } from '@/data/thanos/database';
 import { guides, siteDescription } from '@/data/thanos/guides';
 import { officialGameFacts } from '@/data/thanos/sources';
 import { topicPageList } from '@/data/thanos/topics';
 import { LocaleLink } from '@/i18n/navigation';
 import {
   ArrowRight,
-  BookOpen,
   Clock3,
+  Database,
   Download,
   ExternalLink,
   Gamepad2,
@@ -24,6 +25,7 @@ import {
   RadioTower,
   ShieldAlert,
   Swords,
+  Wrench,
 } from 'lucide-react';
 import Image from 'next/image';
 
@@ -64,6 +66,18 @@ const primaryLinks = [
     href: '/download',
     icon: Download,
   },
+  {
+    title: 'Tools',
+    body: 'Use boss checklists, weapon planning, and the six-stone tracker.',
+    href: '/tools',
+    icon: Wrench,
+  },
+  {
+    title: 'Database',
+    body: 'Filter structured stones, weapons, bosses, and map route data.',
+    href: '/database',
+    icon: Database,
+  },
 ];
 
 const keywordLinks = [
@@ -76,6 +90,10 @@ const keywordLinks = [
     href: '/guides/mechanical-gloves-doom-guide',
   },
   { keyword: 'surtur sword', href: '/guides/surtur-twilight-sword-guide' },
+  { keyword: 'boss checklist', href: '/tools/boss-checklist' },
+  { keyword: 'weapon planner', href: '/tools/weapon-planner' },
+  { keyword: 'stones tracker', href: '/tools/infinity-stones-tracker' },
+  { keyword: 'database', href: '/database' },
   { keyword: 'codes', href: '/codes' },
   { keyword: 'official roblox', href: '/download' },
 ];
@@ -432,6 +450,76 @@ export function ThanosHomePage() {
                     </p>
                   </LocaleLink>
                 ))}
+              </div>
+            </section>
+
+            <section className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_360px]">
+              <div className="rounded-lg border border-[#3A2D4E] bg-[#151024] p-6">
+                <div className="flex flex-wrap items-center justify-between gap-4">
+                  <div>
+                    <p className="font-semibold text-[#57D68D] text-xs uppercase tracking-[0.18em]">
+                      Interactive Tools
+                    </p>
+                    <h2 className="mt-2 font-display text-3xl font-black">
+                      Plan before you grind
+                    </h2>
+                  </div>
+                  <Button
+                    asChild
+                    variant="outline"
+                    className="border-[#3A2D4E] text-[#F8F1FF] hover:border-[#F6C453]"
+                  >
+                    <LocaleLink href="/tools">All tools</LocaleLink>
+                  </Button>
+                </div>
+                <div className="mt-5 grid gap-3 md:grid-cols-3">
+                  {toolCards.map((tool) => (
+                    <LocaleLink
+                      key={tool.href}
+                      href={tool.href}
+                      className="group rounded-lg border border-[#3A2D4E] bg-[#080611] p-4 transition hover:border-[#F6C453]"
+                    >
+                      <h3 className="font-display font-bold text-[#FFE7A8]">
+                        {tool.title}
+                      </h3>
+                      <p className="mt-2 line-clamp-3 text-[#C6BCD8] text-sm leading-6">
+                        {tool.body}
+                      </p>
+                      <span className="mt-3 inline-flex items-center gap-2 text-[#57D68D] text-sm">
+                        Open
+                        <ArrowRight className="size-4 transition group-hover:translate-x-0.5" />
+                      </span>
+                    </LocaleLink>
+                  ))}
+                </div>
+              </div>
+
+              <div className="rounded-lg border border-[#3A2D4E] bg-[#151024] p-6">
+                <p className="font-semibold text-[#F6C453] text-xs uppercase tracking-[0.18em]">
+                  Database
+                </p>
+                <h2 className="mt-2 font-display text-3xl font-black">
+                  Fandom-derived tables
+                </h2>
+                <div className="mt-5 grid gap-3">
+                  {databaseHubCards.map((card) => (
+                    <LocaleLink
+                      key={card.href}
+                      href={card.href}
+                      className="flex items-start justify-between gap-3 rounded-md border border-[#3A2D4E] bg-[#080611] p-3 transition hover:border-[#F6C453]"
+                    >
+                      <span className="min-w-0">
+                        <span className="block font-display font-bold text-[#FFE7A8]">
+                          {card.title}
+                        </span>
+                        <span className="mt-1 block text-[#C6BCD8] text-xs leading-5">
+                          {card.count} entries
+                        </span>
+                      </span>
+                      <ArrowRight className="mt-1 size-4 shrink-0 text-[#57D68D]" />
+                    </LocaleLink>
+                  ))}
+                </div>
               </div>
             </section>
 

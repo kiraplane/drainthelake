@@ -10,6 +10,7 @@ import {
   ChevronDown,
   CircleHelp,
   Compass,
+  Database,
   Download,
   Gamepad2,
   Gem,
@@ -44,6 +45,29 @@ const wikiNavGroups: WikiNavGroup[] = [
       { href: '/download', label: 'Official Roblox' },
       { href: '/updates', label: 'Update 3.2' },
     ],
+  },
+  {
+    title: 'Tools',
+    icon: ListChecks,
+    links: [
+      { href: '/tools', label: 'Tools Hub' },
+      { href: '/tools/boss-checklist', label: 'Boss Checklist' },
+      { href: '/tools/weapon-planner', label: 'Weapon Planner' },
+      { href: '/tools/infinity-stones-tracker', label: 'Stones Tracker' },
+    ],
+    activePrefixes: ['/tools'],
+  },
+  {
+    title: 'Database',
+    icon: Database,
+    links: [
+      { href: '/database', label: 'Database Hub' },
+      { href: '/database/stones', label: 'Stones Data' },
+      { href: '/database/weapons', label: 'Weapons Data' },
+      { href: '/database/bosses', label: 'Bosses Data' },
+      { href: '/database/zones', label: 'Zones Data' },
+    ],
+    activePrefixes: ['/database'],
   },
   {
     title: 'Stones',
@@ -331,6 +355,8 @@ export const navigationIcons = {
   bosses: Swords,
   map: Map,
   controls: Gamepad2,
+  tools: ListChecks,
+  database: Database,
   download: Download,
   safety: CircleHelp,
 };

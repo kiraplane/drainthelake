@@ -4,10 +4,12 @@ import { Routes } from '@/routes';
 import type { NestedMenuItem } from '@/types';
 import {
   BookOpen,
+  Database,
   Download,
   Gamepad2,
   Gem,
   Hammer,
+  ListChecks,
   Map,
   RadioTower,
   ShieldAlert,
@@ -138,6 +140,37 @@ export function useNavbarLinks(): NestedMenuItem[] {
           href: Routes.SurturGuide,
           external: false,
           icon: <Swords className="size-4" />,
+        },
+      ],
+    },
+    {
+      title: 'Tools',
+      href: Routes.Tools,
+      external: false,
+      icon: <ListChecks className="size-4" />,
+      items: [
+        {
+          title: 'Boss Checklist',
+          description:
+            'Check Doom, Surtur, Eson, and other boss prerequisites.',
+          href: Routes.BossChecklist,
+          external: false,
+          icon: <ListChecks className="size-4" />,
+        },
+        {
+          title: 'Weapon Planner',
+          description:
+            'Plan Gungnir, Heart of Ymir, Mechanical Gloves, and other unlocks.',
+          href: Routes.WeaponPlanner,
+          external: false,
+          icon: <Hammer className="size-4" />,
+        },
+        {
+          title: 'Wiki Database',
+          description: 'Filter stones, weapons, bosses, and map route data.',
+          href: Routes.Database,
+          external: false,
+          icon: <Database className="size-4" />,
         },
       ],
     },

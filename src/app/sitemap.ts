@@ -36,6 +36,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
                 route === Routes.Bosses ||
                 route === Routes.Map ||
                 route === Routes.Controls ||
+                route === Routes.Tools ||
+                route === Routes.Database ||
                 route === Routes.Download ||
                 route === Routes.Updates
               ? 0.9

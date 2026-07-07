@@ -122,7 +122,10 @@ Serper balanced discovery used autocomplete/related only, not bulk SERP validati
 | Interactive map | watch | Fandom map exists but maintained route data is thin; route hub first |
 | Weapon tier engine | watch | TierMaker demand exists but current evidence is not strong enough |
 | Code tracker | direct-lite | codes page with checked date and watch terms implemented |
-| Boss prerequisite checklist | next iteration | ordinary guide pages now cover it; can become compact checklist later |
+| Boss prerequisite checklist | implemented | `/tools/boss-checklist` uses structured boss prerequisite data |
+| Weapon unlock planner | implemented | `/tools/weapon-planner` routes weapons through prerequisites and related guides |
+| Infinity Stones tracker | implemented | `/tools/infinity-stones-tracker` tracks all six stones and next route focus |
+| Structured database pages | implemented | `/database/stones`, `/database/weapons`, `/database/bosses`, `/database/zones` provide filterable tables |
 
 ## 8. Implementation Notes
 

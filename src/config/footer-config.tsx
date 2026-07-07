@@ -64,6 +64,31 @@ export function useFooterLinks(): NestedMenuItem[] {
       ],
     },
     {
+      title: 'Tools',
+      items: [
+        {
+          title: 'Boss Checklist',
+          href: Routes.BossChecklist,
+          external: false,
+        },
+        {
+          title: 'Weapon Planner',
+          href: Routes.WeaponPlanner,
+          external: false,
+        },
+        {
+          title: 'Stones Tracker',
+          href: Routes.StonesTracker,
+          external: false,
+        },
+        {
+          title: 'Wiki Database',
+          href: Routes.Database,
+          external: false,
+        },
+      ],
+    },
+    {
       title: t('legal.title'),
       items: [
         {
