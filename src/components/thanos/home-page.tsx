@@ -6,7 +6,13 @@ import {
 } from '@/components/thanos/wiki-navigation';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { databaseHubCards, toolCards } from '@/data/thanos/database';
+import {
+  bosses,
+  databaseHubCards,
+  stones,
+  weapons,
+  zones,
+} from '@/data/thanos/database';
 import { guides, siteDescription } from '@/data/thanos/guides';
 import { officialGameFacts } from '@/data/thanos/sources';
 import { topicPageList } from '@/data/thanos/topics';
@@ -20,6 +26,7 @@ import {
   Gamepad2,
   Gem,
   Hammer,
+  ListChecks,
   Map,
   Play,
   RadioTower,
@@ -136,6 +143,77 @@ const latestUpdateItems = [
     title: 'Codes remain conservative',
     date: '2026-07-07',
     body: 'Search demand exists, but no active redeem code is verified. Script demand is handled as safety intent.',
+  },
+];
+
+const coreDataModules = [
+  {
+    title: 'Infinity Stones Data',
+    count: stones.length,
+    body: 'Reality, Space, Time, Power, Mind, and Soul split by route type, ability focus, and safe checklist tasks.',
+    href: '/database/stones',
+    toolHref: '/tools/infinity-stones-tracker',
+    toolLabel: 'Track stones',
+    guideHref: '/guides/all-infinity-stones-guide',
+    samples: ['Reality Stone', 'Space Stone', 'Soul Stone'],
+    icon: Gem,
+  },
+  {
+    title: 'Weapon Route Data',
+    count: weapons.length,
+    body: 'Gauntlet, Mjolnir, Stormbreaker, Gungnir, Heart of Ymir, Surtur Sword, and Mechanical Gloves prerequisites.',
+    href: '/database/weapons',
+    toolHref: '/tools/weapon-planner',
+    toolLabel: 'Plan unlocks',
+    guideHref: '/guides/weapons-progression-guide',
+    samples: ['Mechanical Gloves', 'Gungnir', 'Heart of Ymir'],
+    icon: Hammer,
+  },
+  {
+    title: 'Boss Prerequisites',
+    count: bosses.length,
+    body: 'Doom, Surtur, Eson, Lazarus, Astra, and stone NPC checks with prep steps and route gates.',
+    href: '/database/bosses',
+    toolHref: '/tools/boss-checklist',
+    toolLabel: 'Check prep',
+    guideHref: '/bosses',
+    samples: ['Doom', 'Surtur', 'Eson'],
+    icon: Swords,
+  },
+  {
+    title: 'Map and Zone Data',
+    count: zones.length,
+    body: 'Main Map, Catacombs, World5, Forge, Power Temple, stone obbies, Lunar World, and trials as route gates.',
+    href: '/database/zones',
+    toolHref: '/map',
+    toolLabel: 'Open map hub',
+    guideHref: '/guides/gungnir-fragments-guide',
+    samples: ['Catacombs', 'World5', 'Forge'],
+    icon: Map,
+  },
+];
+
+const toolWorkflow = [
+  {
+    title: 'Track all six stones',
+    body: 'Mark collected stones, see the next route focus, and jump back to the full all-stones guide.',
+    href: '/tools/infinity-stones-tracker',
+    databaseHref: '/database/stones',
+    icon: Gem,
+  },
+  {
+    title: 'Plan the next weapon',
+    body: 'Pick a target such as Gungnir, Heart of Ymir, Surtur Sword, or Mechanical Gloves and follow prerequisites.',
+    href: '/tools/weapon-planner',
+    databaseHref: '/database/weapons',
+    icon: Hammer,
+  },
+  {
+    title: 'Check boss readiness',
+    body: 'Choose Doom, Surtur, Eson, Lazarus, Astra, or Power Stone NPC before starting a long attempt.',
+    href: '/tools/boss-checklist',
+    databaseHref: '/database/bosses',
+    icon: ListChecks,
   },
 ];
 
@@ -453,72 +531,147 @@ export function ThanosHomePage() {
               </div>
             </section>
 
-            <section className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_360px]">
-              <div className="rounded-lg border border-[#3A2D4E] bg-[#151024] p-6">
-                <div className="flex flex-wrap items-center justify-between gap-4">
-                  <div>
-                    <p className="font-semibold text-[#57D68D] text-xs uppercase tracking-[0.18em]">
-                      Interactive Tools
-                    </p>
-                    <h2 className="mt-2 font-display text-3xl font-black">
-                      Plan before you grind
-                    </h2>
-                  </div>
+            <section className="rounded-lg border border-[#3A2D4E] bg-[#151024] p-6">
+              <div className="flex flex-wrap items-center justify-between gap-4">
+                <div>
+                  <p className="font-semibold text-[#57D68D] text-xs uppercase tracking-[0.18em]">
+                    Core Data and Tools
+                  </p>
+                  <h2 className="mt-2 font-display text-3xl font-black">
+                    Route data you can act on
+                  </h2>
+                </div>
+                <div className="flex flex-wrap gap-2">
                   <Button
                     asChild
                     variant="outline"
                     className="border-[#3A2D4E] text-[#F8F1FF] hover:border-[#F6C453]"
                   >
-                    <LocaleLink href="/tools">All tools</LocaleLink>
+                    <LocaleLink href="/database">Database</LocaleLink>
+                  </Button>
+                  <Button
+                    asChild
+                    className="bg-[#F6C453] text-[#120C05] hover:bg-[#FFE08A]"
+                  >
+                    <LocaleLink href="/tools">
+                      Tools
+                      <ArrowRight className="size-4" />
+                    </LocaleLink>
                   </Button>
                 </div>
-                <div className="mt-5 grid gap-3 md:grid-cols-3">
-                  {toolCards.map((tool) => (
+              </div>
+
+              <div className="mt-5 grid gap-4 lg:grid-cols-2">
+                {coreDataModules.map((module) => (
+                  <article
+                    key={module.title}
+                    className="rounded-lg border border-[#3A2D4E] bg-[#080611] p-5"
+                  >
+                    <div className="flex items-start gap-4">
+                      <span className="flex size-10 shrink-0 items-center justify-center rounded-md bg-[#F6C453] text-[#120C05]">
+                        <module.icon className="size-5" />
+                      </span>
+                      <div className="min-w-0">
+                        <div className="flex flex-wrap items-center gap-2">
+                          <h3 className="font-display font-bold text-[#FFE7A8] text-xl">
+                            {module.title}
+                          </h3>
+                          <Badge
+                            variant="outline"
+                            className="border-[#3A2D4E] text-[#C6BCD8]"
+                          >
+                            {module.count} entries
+                          </Badge>
+                        </div>
+                        <p className="mt-2 text-[#C6BCD8] text-sm leading-6">
+                          {module.body}
+                        </p>
+                      </div>
+                    </div>
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      {module.samples.map((sample) => (
+                        <span
+                          key={sample}
+                          className="rounded-md border border-[#3A2D4E] px-2.5 py-1 text-[#C6BCD8] text-xs"
+                        >
+                          {sample}
+                        </span>
+                      ))}
+                    </div>
+                    <div className="mt-5 grid gap-2 sm:grid-cols-3">
+                      <LocaleLink
+                        href={module.href}
+                        className="rounded-md border border-[#3A2D4E] bg-[#151024] px-3 py-2 text-[#F8F1FF] text-sm transition hover:border-[#F6C453]"
+                      >
+                        Data table
+                      </LocaleLink>
+                      <LocaleLink
+                        href={module.toolHref}
+                        className="rounded-md border border-[#3A2D4E] bg-[#151024] px-3 py-2 text-[#F8F1FF] text-sm transition hover:border-[#F6C453]"
+                      >
+                        {module.toolLabel}
+                      </LocaleLink>
+                      <LocaleLink
+                        href={module.guideHref}
+                        className="rounded-md border border-[#3A2D4E] bg-[#151024] px-3 py-2 text-[#F8F1FF] text-sm transition hover:border-[#F6C453]"
+                      >
+                        Related guide
+                      </LocaleLink>
+                    </div>
+                  </article>
+                ))}
+              </div>
+
+              <div className="mt-5 grid gap-4 lg:grid-cols-[minmax(0,1fr)_320px]">
+                <div className="grid gap-3 md:grid-cols-3">
+                  {toolWorkflow.map((tool) => (
                     <LocaleLink
                       key={tool.href}
                       href={tool.href}
                       className="group rounded-lg border border-[#3A2D4E] bg-[#080611] p-4 transition hover:border-[#F6C453]"
                     >
-                      <h3 className="font-display font-bold text-[#FFE7A8]">
-                        {tool.title}
-                      </h3>
-                      <p className="mt-2 line-clamp-3 text-[#C6BCD8] text-sm leading-6">
+                      <div className="flex items-center gap-3">
+                        <span className="flex size-9 shrink-0 items-center justify-center rounded-md border border-[#3A2D4E] text-[#57D68D]">
+                          <tool.icon className="size-4" />
+                        </span>
+                        <h3 className="font-display font-bold text-[#FFE7A8]">
+                          {tool.title}
+                        </h3>
+                      </div>
+                      <p className="mt-3 line-clamp-3 text-[#C6BCD8] text-sm leading-6">
                         {tool.body}
                       </p>
                       <span className="mt-3 inline-flex items-center gap-2 text-[#57D68D] text-sm">
-                        Open
+                        Open tool
                         <ArrowRight className="size-4 transition group-hover:translate-x-0.5" />
                       </span>
                     </LocaleLink>
                   ))}
                 </div>
-              </div>
 
-              <div className="rounded-lg border border-[#3A2D4E] bg-[#151024] p-6">
-                <p className="font-semibold text-[#F6C453] text-xs uppercase tracking-[0.18em]">
-                  Database
-                </p>
-                <h2 className="mt-2 font-display text-3xl font-black">
-                  Fandom-derived tables
-                </h2>
-                <div className="mt-5 grid gap-3">
-                  {databaseHubCards.map((card) => (
-                    <LocaleLink
-                      key={card.href}
-                      href={card.href}
-                      className="flex items-start justify-between gap-3 rounded-md border border-[#3A2D4E] bg-[#080611] p-3 transition hover:border-[#F6C453]"
-                    >
-                      <span className="min-w-0">
-                        <span className="block font-display font-bold text-[#FFE7A8]">
-                          {card.title}
+                <div className="rounded-lg border border-[#3A2D4E] bg-[#080611] p-5">
+                  <p className="font-semibold text-[#F6C453] text-xs uppercase tracking-[0.18em]">
+                    Database Index
+                  </p>
+                  <div className="mt-4 grid gap-2">
+                    {databaseHubCards.map((card) => (
+                      <LocaleLink
+                        key={card.href}
+                        href={card.href}
+                        className="flex items-start justify-between gap-3 rounded-md border border-[#3A2D4E] bg-[#151024] p-3 transition hover:border-[#F6C453]"
+                      >
+                        <span className="min-w-0">
+                          <span className="block font-display font-bold text-[#FFE7A8]">
+                            {card.title}
+                          </span>
+                          <span className="mt-1 block text-[#C6BCD8] text-xs leading-5">
+                            {card.count} entries
+                          </span>
                         </span>
-                        <span className="mt-1 block text-[#C6BCD8] text-xs leading-5">
-                          {card.count} entries
-                        </span>
-                      </span>
-                      <ArrowRight className="mt-1 size-4 shrink-0 text-[#57D68D]" />
-                    </LocaleLink>
-                  ))}
+                        <ArrowRight className="mt-1 size-4 shrink-0 text-[#57D68D]" />
+                      </LocaleLink>
+                    ))}
+                  </div>
                 </div>
               </div>
             </section>
