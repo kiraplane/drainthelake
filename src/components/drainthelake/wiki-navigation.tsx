@@ -207,7 +207,7 @@ export function DrainTheLakeMobileMenu({
   currentPath?: string;
 }) {
   return (
-    <details className="mx-4 mb-6 rounded-lg border border-slate-900/10 bg-white/85 p-4 shadow-sm xl:hidden">
+    <details className="mx-4 mb-6 rounded-lg border border-slate-900/10 bg-white/85 p-4 shadow-sm lg:hidden">
       <summary className="flex cursor-pointer list-none items-center justify-between gap-3 font-semibold text-slate-950 [&::-webkit-details-marker]:hidden">
         <span className="inline-flex items-center gap-2">
           <Compass className="size-5 text-teal-700" />
@@ -248,7 +248,7 @@ export function DrainTheLakeRouteSidebar({
   currentPath?: string;
 }) {
   return (
-    <aside className="sticky top-24 hidden max-h-[calc(100vh-7rem)] overflow-y-auto rounded-lg border border-slate-900/10 bg-white/85 p-4 shadow-sm shadow-slate-950/5 xl:block">
+    <aside className="sticky top-24 hidden max-h-[calc(100vh-7rem)] w-[264px] shrink-0 self-start overflow-y-auto rounded-lg border border-slate-900/10 bg-white/85 p-4 shadow-sm shadow-slate-950/5 lg:block">
       <div className="mb-4 rounded-lg bg-[#10232a] p-4 text-white">
         <p className="font-semibold text-teal-100 text-xs uppercase">
           Drain the Lake Wiki
@@ -307,10 +307,14 @@ export function DrainTheLakePageShell({
 }) {
   const currentPath = useLocalePathname();
 
+  if (currentPath === '/') {
+    return <>{children}</>;
+  }
+
   return (
     <>
       <DrainTheLakeMobileMenu currentPath={currentPath} />
-      <div className="mx-auto grid w-full max-w-[1480px] gap-6 px-4 xl:grid-cols-[minmax(0,1fr)_280px] xl:px-6">
+      <div className="mx-auto grid w-full max-w-7xl gap-8 px-4 lg:grid-cols-[minmax(0,1fr)_264px]">
         <div className="min-w-0">{children}</div>
         <DrainTheLakeRouteSidebar currentPath={currentPath} />
       </div>
