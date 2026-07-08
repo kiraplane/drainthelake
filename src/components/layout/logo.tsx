@@ -24,13 +24,13 @@ export function Logo({ className }: { className?: string }) {
   return (
     <Image
       src={logo}
-      alt="Thanos Simulator Wiki logo"
-      title="Thanos Simulator Wiki"
+      alt="Drain the Lake Wiki logo"
+      title="Drain the Lake Wiki"
       width={96}
       height={96}
       priority
       className={cn(
-        'h-9 w-auto rounded-sm bg-[#080D17] object-contain',
+        'h-9 w-auto rounded-sm bg-[#082f49] object-contain',
         className
       )}
     />

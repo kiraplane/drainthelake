@@ -20,7 +20,7 @@ export const websiteConfig: WebsiteConfig = {
   },
   metadata: {
     images: {
-      ogImage: '/thanos/og-image.png',
+      ogImage: '/drainthelake/og-image.jpg',
       logoLight: '/logo.png',
       logoDark: '/logo.png',
     },
@@ -75,8 +75,8 @@ export const websiteConfig: WebsiteConfig = {
   },
   mail: {
     provider: 'resend',
-    fromEmail: 'Thanos Simulator Wiki <hello@thanossimulator.wiki>',
-    supportEmail: 'hello@thanossimulator.wiki',
+    fromEmail: 'Drain the Lake Wiki <hello@drainthelake.top>',
+    supportEmail: 'hello@drainthelake.top',
   },
   newsletter: {
     enable: false,

@@ -1,8 +1,8 @@
 {
   "Metadata": {
-    "name": "Thanos Simulator Wiki",
-    "title": "Thanos Simulator Wiki - Infinity Stones, Weapons and Guide",
-    "description": "Thanos Simulator Wiki for all Infinity Stones, gauntlet controls, weapons, bosses, Update 3.2, codes safety, and official Roblox links."
+    "name": "Drain the Lake Wiki",
+    "title": "Drain the Lake Wiki - Roblox Codes, Guide and Walkthrough",
+    "description": "Drain the Lake Wiki for Roblox bucket routes, tokens, Skill Tree upgrades, depth, codes status, badges, and the phone ending."
   },
   "Common": {
     "premium": "Premium",
@@ -54,7 +54,7 @@
   },
   "PricingPage": {
     "title": "Pricing",
-    "description": "Optional supporter plans for keeping Thanos Simulator Wiki maintained",
+    "description": "Optional supporter plans for keeping Drain the Lake Wiki maintained",
     "subtitle": "Simple support options for readers who want to help maintain source-checked guides and route updates",
     "monthly": "Monthly",
     "yearly": "Yearly",
@@ -80,17 +80,17 @@
   "PricePlans": {
     "free": {
       "name": "Free",
-      "description": "Browse Thanos Simulator Wiki with no payment required",
+      "description": "Browse Drain the Lake Wiki with no payment required",
       "features": {
-        "feature-1": "Thanos Simulator code status and watch notes",
-        "feature-2": "Infinity Stones, controls, weapons, bosses, and map routes",
-        "feature-3": "Guides for Update 3.2, codes safety, official links, and beginner progression",
+        "feature-1": "Drain the Lake code status and watch notes",
+        "feature-2": "Bucket routes, tokens, Skill Tree, depth, badges, and ending pages",
+        "feature-3": "Guides for code safety, official links, and beginner progression",
         "feature-4": "Core pages updated as game information changes"
       },
       "limits": {
         "limit-1": "Supporter features may be added later",
         "limit-2": "Some data can change after game updates",
-        "limit-3": "Guide updates depend on available sources",
+        "limit-3": "Guide updates follow confirmed game info",
         "limit-4": "Community feedback helps improve coverage"
       }
     },
@@ -99,7 +99,7 @@
       "description": "For readers who want to support ongoing guide updates",
       "features": {
         "feature-1": "Support site maintenance",
-        "feature-2": "Help fund future Thanos Simulator route checks",
+        "feature-2": "Help fund future Drain the Lake route checks",
         "feature-3": "Keep code and guide pages fresh",
         "feature-4": "Support cleaner walkthrough coverage",
         "feature-5": "Help improve page speed and hosting stability",
@@ -113,7 +113,7 @@
     },
     "max": {
       "name": "Backer",
-      "description": "For heavier support of Thanos Simulator Wiki maintenance",
+      "description": "For heavier support of Drain the Lake Wiki maintenance",
       "features": {
         "feature-1": "Support expanded guide coverage",
         "feature-2": "Help fund more frequent source reviews",
@@ -300,33 +300,33 @@
         "title": "Roblox"
       },
       "stones": {
-        "title": "Stones"
+        "title": "Skill Tree"
       },
       "weapons": {
-        "title": "Weapons"
+        "title": "Tokens"
       },
       "bosses": {
-        "title": "Bosses"
+        "title": "Badges"
       },
       "map": {
-        "title": "Map"
+        "title": "Depth"
       },
       "controls": {
-        "title": "Controls"
+        "title": "Drain Cycle"
       },
       "updates": {
         "title": "Updates"
       }
     },
     "footer": {
-      "tagline": "An independent Thanos Simulator Wiki for Infinity Stones, controls, weapons, bosses, Update 3.2, codes safety, and official Roblox links.",
+      "tagline": "An independent Drain the Lake Wiki for bucket routes, tokens, Skill Tree upgrades, depth, codes status, badges, and the phone ending.",
       "wiki": {
         "title": "Wiki",
         "items": {
-          "stones": "Stones",
-          "weapons": "Weapons",
-          "bosses": "Bosses",
-          "map": "Map",
+          "stones": "Skill Tree",
+          "weapons": "Tokens",
+          "bosses": "Badges",
+          "map": "Depth",
           "codes": "Codes",
           "updates": "Updates"
         }
@@ -336,8 +336,8 @@
         "items": {
           "all": "All Guides",
           "beginner": "Beginner Guide",
-          "stones": "All Stones Guide",
-          "controls": "Controls Guide"
+          "stones": "Skill Tree Guide",
+          "controls": "Drain Cycle Guide"
         }
       },
       "legal": {

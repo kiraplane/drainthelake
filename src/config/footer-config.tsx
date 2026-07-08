@@ -2,63 +2,85 @@
 
 import { Routes } from '@/routes';
 import type { NestedMenuItem } from '@/types';
-import { useTranslations } from 'next-intl';
 
 export function useFooterLinks(): NestedMenuItem[] {
-  const t = useTranslations('Marketing.footer');
-
   return [
     {
-      title: t('wiki.title'),
+      title: 'Wiki',
       items: [
         {
-          title: t('wiki.items.stones'),
-          href: Routes.Stones,
+          title: 'Beginner',
+          href: Routes.Beginner,
           external: false,
         },
         {
-          title: t('wiki.items.weapons'),
-          href: Routes.Weapons,
+          title: 'Drain Cycle',
+          href: Routes.DrainCycle,
           external: false,
         },
         {
-          title: t('wiki.items.bosses'),
-          href: Routes.Bosses,
+          title: 'Tokens',
+          href: Routes.Tokens,
           external: false,
         },
         {
-          title: t('wiki.items.map'),
-          href: Routes.Map,
+          title: 'Skill Tree',
+          href: Routes.SkillTree,
           external: false,
         },
         {
-          title: t('wiki.items.codes'),
-          href: Routes.Codes,
+          title: 'Depth',
+          href: Routes.Depth,
           external: false,
         },
       ],
     },
     {
-      title: t('guides.title'),
+      title: 'Guides',
       items: [
         {
-          title: t('guides.items.all'),
+          title: 'All Guides',
           href: Routes.Guides,
           external: false,
         },
         {
-          title: t('guides.items.beginner'),
-          href: Routes.BeginnerGuide,
+          title: 'Full Walkthrough',
+          href: Routes.FullWalkthroughGuide,
           external: false,
         },
         {
-          title: t('guides.items.stones'),
-          href: Routes.StonesGuide,
+          title: 'Fast Drain',
+          href: Routes.FastDrainGuide,
           external: false,
         },
         {
-          title: t('guides.items.controls'),
-          href: Routes.ControlsGuide,
+          title: 'Badges',
+          href: Routes.Badges,
+          external: false,
+        },
+      ],
+    },
+    {
+      title: 'Status',
+      items: [
+        {
+          title: 'Codes',
+          href: Routes.Codes,
+          external: false,
+        },
+        {
+          title: 'Updates',
+          href: Routes.Updates,
+          external: false,
+        },
+        {
+          title: 'Official Roblox',
+          href: Routes.Download,
+          external: false,
+        },
+        {
+          title: 'Disclaimer',
+          href: Routes.Disclaimer,
           external: false,
         },
       ],
@@ -67,48 +89,43 @@ export function useFooterLinks(): NestedMenuItem[] {
       title: 'Tools',
       items: [
         {
-          title: 'Boss Checklist',
-          href: Routes.BossChecklist,
+          title: 'Tools Hub',
+          href: Routes.Tools,
           external: false,
         },
         {
-          title: 'Weapon Planner',
-          href: Routes.WeaponPlanner,
+          title: 'Route Efficiency',
+          href: Routes.RouteEfficiency,
           external: false,
         },
         {
-          title: 'Stones Tracker',
-          href: Routes.StonesTracker,
+          title: 'Buckets',
+          href: Routes.Buckets,
           external: false,
         },
         {
-          title: 'Wiki Database',
-          href: Routes.Database,
+          title: 'Phone Ending',
+          href: Routes.Endings,
           external: false,
         },
       ],
     },
     {
-      title: t('legal.title'),
+      title: 'Legal',
       items: [
         {
-          title: t('legal.items.privacyPolicy'),
+          title: 'Privacy Policy',
           href: Routes.PrivacyPolicy,
           external: false,
         },
         {
-          title: t('legal.items.termsOfService'),
+          title: 'Terms',
           href: Routes.TermsOfService,
           external: false,
         },
         {
-          title: t('legal.items.cookiePolicy'),
+          title: 'Cookie Policy',
           href: Routes.CookiePolicy,
-          external: false,
-        },
-        {
-          title: t('legal.items.disclaimer'),
-          href: Routes.Disclaimer,
           external: false,
         },
       ],

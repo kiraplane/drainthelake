@@ -10,9 +10,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   return constructMetadata({
-    title: 'Terms of Service | Thanos Simulator Wiki',
+    title: 'Terms of Service | Drain the Lake Wiki',
     description:
-      'Terms for using the independent Thanos Simulator Wiki and Roblox guide site.',
+      'Terms for using the independent Drain the Lake Wiki and Roblox guide site.',
     locale,
     pathname: '/terms',
   });
@@ -24,14 +24,14 @@ export default function TermsOfServicePage() {
       <Container className="max-w-3xl space-y-6 px-4">
         <h1 className="font-display text-4xl font-black">Terms of Service</h1>
         <p className="leading-8 text-[#CBD5E1]">
-          This site provides independent Thanos Simulator guides, data notes,
-          and strategy content. It is not affiliated with, endorsed by,
-          sponsored by, or operated by Roblox, Marvel, Disney, Blg42598, or the
-          official Thanos Simulator creator.
+          This site provides independent Drain the Lake guides, data notes, and
+          strategy content. It is not affiliated with, endorsed by, sponsored
+          by, or operated by Roblox, IWTM10GTMPLS, or the official Drain the
+          Lake creator.
         </p>
         <p className="leading-8 text-[#CBD5E1]">
-          Game data can change quickly. Codes status, Infinity Stone routes,
-          weapon prerequisites, boss mechanics, map access, update markers, and
+          Game data can change quickly. Codes status, bucket routes, Skill Tree
+          choices, depth checks, badge requirements, update markers, and
           strategy advice should be treated as guidance, not official
           instructions.
         </p>
@@ -41,7 +41,7 @@ export default function TermsOfServicePage() {
           platform terms.
         </p>
         <p className="leading-8 text-[#CBD5E1]">
-          Questions about these terms can be sent to hello@thanossimulator.wiki.
+          Questions about these terms can be sent to hello@drainthelake.top.
         </p>
       </Container>
     </div>

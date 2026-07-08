@@ -1,13 +1,13 @@
-# Thanos Simulator Wiki
+# Drain the Lake Wiki
 
-Independent guide site for Thanos Simulator at `https://www.thanossimulator.wiki`.
+Independent Roblox guide site for Drain the Lake at `https://www.drainthelake.top`.
 
 ## Scope
 
-- Infinity Stones route, gauntlet controls, map access, weapons, bosses, and Update 3.2.
+- Beginner route, drain cycle, token planning, Skill Tree, depth, buckets, badges, and phone ending.
 - Codes status with checked dates and no fake active code list.
-- Safety guidance for script/executor/search-risk demand.
-- Official Roblox access for place ID `3261957210`.
+- Route efficiency tool for comparing rough bucket-loop timing.
+- Official Roblox access for place ID `138381251771774`.
 
 ## Development
 
@@ -22,5 +22,5 @@ pnpm build
 ## Source Policy
 
 - Official facts come from Roblox and Roblox API snapshots.
-- Community and YouTube sources are used as route signals, then rewritten into original player-facing guides.
+- Search, competitor, and YouTube sources are used as route signals, then rewritten into original player-facing guides.
 - Scripts, executors, modified clients, fake APKs, and account-risk shortcuts are not provided.

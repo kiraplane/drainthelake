@@ -1,7 +1,7 @@
 import { routing } from '@/i18n/routing';
 import type { Locale } from 'next-intl';
 
-export const CANONICAL_BASE_URL = 'https://www.thanossimulator.wiki';
+export const CANONICAL_BASE_URL = 'https://www.drainthelake.top';
 
 function cleanBaseUrl(url: string) {
   return url.replace(/\/$/, '');
@@ -11,7 +11,7 @@ function isLocalBaseUrl(url?: string) {
   return !url || /localhost|127\.0\.0\.1|0\.0\.0\.0/.test(url);
 }
 
-function getThanosBaseUrl(url?: string) {
+function getDrainTheLakeBaseUrl(url?: string) {
   if (!url || isLocalBaseUrl(url)) {
     return undefined;
   }
@@ -19,11 +19,11 @@ function getThanosBaseUrl(url?: string) {
   try {
     const parsedUrl = new URL(url);
     if (
-      parsedUrl.hostname === 'thanossimulator.wiki' ||
-      parsedUrl.hostname === 'www.thanossimulator.wiki'
+      parsedUrl.hostname === 'drainthelake.top' ||
+      parsedUrl.hostname === 'www.drainthelake.top'
     ) {
       parsedUrl.protocol = 'https:';
-      parsedUrl.hostname = 'www.thanossimulator.wiki';
+      parsedUrl.hostname = 'www.drainthelake.top';
       parsedUrl.port = '';
       parsedUrl.pathname = '';
       parsedUrl.search = '';
@@ -57,9 +57,9 @@ export function getBaseUrl(): string {
   const configuredBaseUrl =
     process.env.NEXT_PUBLIC_BASE_URL || process.env.BETTER_AUTH_URL;
 
-  const thanosBaseUrl = getThanosBaseUrl(configuredBaseUrl);
-  if (thanosBaseUrl) {
-    return thanosBaseUrl;
+  const drainTheLakeBaseUrl = getDrainTheLakeBaseUrl(configuredBaseUrl);
+  if (drainTheLakeBaseUrl) {
+    return drainTheLakeBaseUrl;
   }
 
   return getCanonicalBaseUrl();

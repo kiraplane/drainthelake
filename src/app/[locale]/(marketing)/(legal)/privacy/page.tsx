@@ -10,9 +10,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   return constructMetadata({
-    title: 'Privacy Policy | Thanos Simulator Wiki',
+    title: 'Privacy Policy | Drain the Lake Wiki',
     description:
-      'Privacy policy for the independent Thanos Simulator Wiki and Roblox guide site.',
+      'Privacy policy for the independent Drain the Lake Wiki and Roblox guide site.',
     locale,
     pathname: '/privacy',
   });
@@ -24,9 +24,9 @@ export default function PrivacyPolicyPage() {
       <Container className="max-w-3xl space-y-6 px-4">
         <h1 className="font-display text-4xl font-black">Privacy Policy</h1>
         <p className="leading-8 text-[#CBD5E1]">
-          Thanos Simulator Wiki is an independent Roblox guide site. We do not
-          require accounts for browsing codes status, Infinity Stones, gauntlet
-          controls, weapon routes, boss guides, map notes, official links, or
+          Drain the Lake Wiki is an independent Roblox guide site. We do not
+          require accounts for browsing codes status, bucket routes, tokens,
+          Skill Tree upgrades, depth notes, badge guides, official links, or
           safety pages.
         </p>
         <p className="leading-8 text-[#CBD5E1]">
@@ -39,7 +39,7 @@ export default function PrivacyPolicyPage() {
           asset files or provide downloads as standalone packs.
         </p>
         <p className="leading-8 text-[#CBD5E1]">
-          Privacy questions can be sent to hello@thanossimulator.wiki.
+          Privacy questions can be sent to hello@drainthelake.top.
         </p>
       </Container>
     </div>

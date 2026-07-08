@@ -1,10 +1,10 @@
-import { allCoreRoutes } from '@/data/thanos/guides';
+import { allCoreRoutes } from '@/data/drainthelake/routes';
 import { Routes } from '@/routes';
 import type { MetadataRoute } from 'next';
 import { routing } from '../i18n/routing';
 import { getCanonicalBaseUrl } from '../lib/urls/urls';
 
-const stableLastModified = new Date('2026-07-07T00:00:00.000Z');
+const stableLastModified = new Date('2026-07-08T00:00:00.000Z');
 
 function getLocalizedRoute(locale: string, route: string) {
   if (locale === routing.defaultLocale) {
@@ -26,18 +26,22 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         url: `${baseUrl}${localizedRoute}`,
         lastModified: stableLastModified,
         changeFrequency:
-          route === Routes.Root || route === Routes.Codes ? 'daily' : 'weekly',
+          route === Routes.Root ||
+          route === Routes.Codes ||
+          route === Routes.Updates
+            ? 'daily'
+            : 'weekly',
         priority:
           route === Routes.Root
             ? 1
             : route === Routes.Codes ||
-                route === Routes.Stones ||
-                route === Routes.Weapons ||
-                route === Routes.Bosses ||
-                route === Routes.Map ||
-                route === Routes.Controls ||
+                route === Routes.Beginner ||
+                route === Routes.DrainCycle ||
+                route === Routes.Tokens ||
+                route === Routes.SkillTree ||
+                route === Routes.Depth ||
+                route === Routes.Endings ||
                 route === Routes.Tools ||
-                route === Routes.Database ||
                 route === Routes.Download ||
                 route === Routes.Updates
               ? 0.9

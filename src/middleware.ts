@@ -22,44 +22,17 @@ const retiredPublicRouteRedirects: Array<{
   { pattern: /^\/admin(?:\/.*)?$/, target: '/' },
   { pattern: /^\/settings(?:\/.*)?$/, target: '/' },
   { pattern: /^\/payment(?:\/.*)?$/, target: '/' },
-  {
-    pattern: /^\/all-stones(?:\/.*)?$/,
-    target: '/guides/all-infinity-stones-guide',
-  },
-  {
-    pattern: /^\/infinity-stones(?:\/.*)?$/,
-    target: '/guides/all-infinity-stones-guide',
-  },
-  {
-    pattern: /^\/stones-guide\/?$/,
-    target: '/guides/all-infinity-stones-guide',
-  },
-  {
-    pattern: /^\/controls-guide\/?$/,
-    target: '/guides/gauntlet-controls-guide',
-  },
-  { pattern: /^\/tierlist\/?$/, target: '/guides/weapons-progression-guide' },
-  { pattern: /^\/tier-list\/?$/, target: '/guides/weapons-progression-guide' },
-  {
-    pattern: /^\/weapon-tier-list\/?$/,
-    target: '/guides/weapons-progression-guide',
-  },
-  {
-    pattern: /^\/mechanical-gloves\/?$/,
-    target: '/guides/mechanical-gloves-doom-guide',
-  },
-  { pattern: /^\/doom\/?$/, target: '/guides/mechanical-gloves-doom-guide' },
-  { pattern: /^\/surtur\/?$/, target: '/guides/surtur-twilight-sword-guide' },
-  {
-    pattern: /^\/twilight-sword\/?$/,
-    target: '/guides/surtur-twilight-sword-guide',
-  },
-  { pattern: /^\/heart-of-ymir\/?$/, target: '/guides/heart-of-ymir-guide' },
-  { pattern: /^\/thanos-simulator-codes\/?$/, target: '/codes' },
-  {
-    pattern: /^\/infinity-gauntlet-thanos-simulator-codes\/?$/,
-    target: '/codes',
-  },
+  { pattern: /^\/drain-the-lake-codes\/?$/, target: '/codes' },
+  { pattern: /^\/codes-status\/?$/, target: '/codes' },
+  { pattern: /^\/skill\/?$/, target: '/skill-tree' },
+  { pattern: /^\/skilltree\/?$/, target: '/skill-tree' },
+  { pattern: /^\/token\/?$/, target: '/tokens' },
+  { pattern: /^\/ending\/?$/, target: '/endings' },
+  { pattern: /^\/phone-ending\/?$/, target: '/endings' },
+  { pattern: /^\/walkthrough\/?$/, target: '/guides/full-walkthrough' },
+  { pattern: /^\/fastest-way\/?$/, target: '/guides/fastest-way-to-drain' },
+  { pattern: /^\/all-badges\/?$/, target: '/guides/all-badges-guide' },
+  { pattern: /^\/efficiency\/?$/, target: '/tools/route-efficiency' },
   { pattern: /^\/roblox\/?$/, target: '/download' },
 ];
 
@@ -87,10 +60,7 @@ export default async function middleware(req: NextRequest) {
   const hostHeader = req.headers.get('host');
   const hostname = hostHeader?.split(':')[0].toLowerCase();
   const forwardedProto = req.headers.get('x-forwarded-proto');
-  const productionHosts = new Set([
-    'thanossimulator.wiki',
-    'www.thanossimulator.wiki',
-  ]);
+  const productionHosts = new Set(['drainthelake.top', 'www.drainthelake.top']);
 
   if (
     hostname &&

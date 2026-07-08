@@ -35,6 +35,6 @@ export default function VerifyEmail({
 VerifyEmail.PreviewProps = {
   locale: routing.defaultLocale,
   messages: defaultMessages,
-  url: 'https://www.thanossimulator.wiki',
+  url: 'https://www.drainthelake.top',
   name: 'username',
 };

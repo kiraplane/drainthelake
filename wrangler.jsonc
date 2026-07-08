@@ -1,23 +1,23 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "main": ".open-next/worker.js",
-  "name": "thanossimulator",
+  "name": "drainthelake",
   "keep_vars": true,
   "compatibility_date": "2025-04-01",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "vars": {
-    "NEXT_PUBLIC_GOOGLE_ANALYTICS_ID": "G-7ZV6388SSX"
+    "NEXT_PUBLIC_GOOGLE_ANALYTICS_ID": ""
   },
   "routes": [
     {
-      "pattern": "thanossimulator.wiki",
+      "pattern": "drainthelake.top",
       "custom_domain": true,
-      "zone_name": "thanossimulator.wiki"
+      "zone_name": "drainthelake.top"
     },
     {
-      "pattern": "www.thanossimulator.wiki",
+      "pattern": "www.drainthelake.top",
       "custom_domain": true,
-      "zone_name": "thanossimulator.wiki"
+      "zone_name": "drainthelake.top"
     }
   ],
   "build": {
