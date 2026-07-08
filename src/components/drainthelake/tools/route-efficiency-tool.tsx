@@ -96,10 +96,10 @@ export function RouteEfficiencyTool() {
 
   return (
     <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_340px]">
-      <section className="rounded-lg border border-sky-900/15 bg-white/90 p-6 shadow-sm">
+      <section className="rounded-lg border border-slate-900/10 bg-white/90 p-6 shadow-sm">
         <div className="flex flex-wrap items-center justify-between gap-4">
           <div>
-            <Badge className="bg-cyan-600 text-white">Estimate tool</Badge>
+            <Badge className="bg-teal-700 text-white">Estimate tool</Badge>
             <h2 className="mt-3 font-display text-3xl font-black text-slate-950">
               Compare two drain routes
             </h2>
@@ -111,7 +111,7 @@ export function RouteEfficiencyTool() {
           <Button
             type="button"
             variant="outline"
-            className="border-sky-900/20"
+            className="border-slate-900/15"
             onClick={reset}
           >
             <RotateCcw className="size-4" />
@@ -131,8 +131,8 @@ export function RouteEfficiencyTool() {
                 className={cn(
                   'rounded-lg border p-4',
                   isWinner
-                    ? 'border-cyan-400 bg-cyan-50'
-                    : 'border-sky-900/15 bg-slate-50'
+                    ? 'border-teal-300 bg-teal-50'
+                    : 'border-slate-900/10 bg-slate-50'
                 )}
               >
                 <label className="block" htmlFor={`${routeKey}-label`}>
@@ -145,7 +145,7 @@ export function RouteEfficiencyTool() {
                     onChange={(event) =>
                       updateRoute(routeKey, 'label', event.target.value)
                     }
-                    className="mt-2 border-sky-900/20 bg-white"
+                    className="mt-2 border-slate-900/15 bg-white"
                   />
                 </label>
 
@@ -176,14 +176,14 @@ export function RouteEfficiencyTool() {
                               event.target.value
                             )
                           }
-                          className="mt-2 border-sky-900/20 bg-white"
+                          className="mt-2 border-slate-900/15 bg-white"
                         />
                       </label>
                     );
                   })}
                 </div>
 
-                <div className="mt-4 rounded-md border border-sky-900/10 bg-white p-3">
+                <div className="mt-4 rounded-md border border-slate-900/10 bg-white p-3">
                   <p className="text-slate-600 text-xs">Cycle time</p>
                   <p className="font-display font-black text-2xl text-slate-950">
                     {result.totalSeconds.toFixed(0)}s
@@ -191,7 +191,7 @@ export function RouteEfficiencyTool() {
                   <p className="mt-2 text-slate-600 text-xs">
                     Tokens per minute
                   </p>
-                  <p className="font-display font-black text-2xl text-cyan-800">
+                  <p className="font-display font-black text-2xl text-teal-800">
                     {result.tokensPerMinute.toFixed(1)}
                   </p>
                 </div>
@@ -202,13 +202,13 @@ export function RouteEfficiencyTool() {
       </section>
 
       <aside className="space-y-4">
-        <div className="rounded-lg border border-sky-900/15 bg-slate-950 p-5 text-white">
+        <div className="rounded-lg border border-slate-900/10 bg-[#10232a] p-5 text-white">
           <div className="flex items-center gap-3">
-            <span className="flex size-10 items-center justify-center rounded-md bg-cyan-200 text-slate-950">
+            <span className="flex size-10 items-center justify-center rounded-md bg-teal-100 text-slate-950">
               <Calculator className="size-5" />
             </span>
             <div>
-              <p className="font-semibold text-cyan-200 text-xs uppercase">
+              <p className="font-semibold text-teal-100 text-xs uppercase">
                 Result
               </p>
               <h3 className="font-display text-xl font-bold">
@@ -223,7 +223,7 @@ export function RouteEfficiencyTool() {
           </p>
         </div>
 
-        <div className="rounded-lg border border-sky-900/15 bg-white/90 p-5">
+        <div className="rounded-lg border border-slate-900/10 bg-white/90 p-5">
           <h3 className="font-display text-xl font-bold text-slate-950">
             What to measure
           </h3>

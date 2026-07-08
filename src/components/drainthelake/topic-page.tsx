@@ -55,7 +55,7 @@ export function TopicPage({ topic }: { topic: TopicPageData }) {
       <Container className="space-y-8 px-0">
         <header className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_380px]">
           <div className="max-w-3xl space-y-4">
-            <div className="inline-flex rounded-md bg-cyan-100 px-3 py-1 font-semibold text-cyan-900 text-xs uppercase">
+            <div className="inline-flex rounded-md bg-teal-50 px-3 py-1 font-semibold text-teal-900 text-xs uppercase">
               {topic.eyebrow}
             </div>
             <h1 className="font-display text-4xl font-black tracking-normal md:text-6xl">
@@ -63,21 +63,21 @@ export function TopicPage({ topic }: { topic: TopicPageData }) {
             </h1>
             <p className="text-lg text-slate-700 leading-8">{topic.summary}</p>
             <div className="flex flex-wrap gap-3">
-              <span className="inline-flex items-center rounded-md border border-sky-900/15 bg-white/75 px-3 py-2 font-medium text-slate-700 text-xs">
+              <span className="inline-flex items-center rounded-md border border-slate-900/10 bg-white/75 px-3 py-2 font-medium text-slate-700 text-xs">
                 Drain the Lake route guide
               </span>
               <a
                 href={officialGameFacts.officialRobloxUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-md border border-sky-900/15 bg-white/75 px-3 py-2 font-medium text-slate-700 text-xs hover:text-cyan-700"
+                className="inline-flex items-center gap-2 rounded-md border border-slate-900/10 bg-white/75 px-3 py-2 font-medium text-slate-700 text-xs hover:text-teal-700"
               >
                 Official Roblox
                 <ExternalLink className="size-3.5" />
               </a>
             </div>
           </div>
-          <div className="relative aspect-video overflow-hidden rounded-lg border border-sky-900/15 bg-slate-200">
+          <div className="relative aspect-video overflow-hidden rounded-lg border border-slate-900/10 bg-slate-200">
             <Image
               src={topic.image}
               alt={`${topic.title} artwork`}
@@ -90,7 +90,7 @@ export function TopicPage({ topic }: { topic: TopicPageData }) {
 
         <AdsterraAdFrame
           slot="banner-728x90"
-          className="rounded-lg border border-sky-900/15 bg-white/85 py-4"
+          className="rounded-lg border border-slate-900/10 bg-white/85 py-4"
           label
         />
 
@@ -99,10 +99,10 @@ export function TopicPage({ topic }: { topic: TopicPageData }) {
             {topic.cards.map((card) => (
               <article
                 key={card.title}
-                className="rounded-lg border border-sky-900/15 bg-white/85 p-5 shadow-sm"
+                className="rounded-lg border border-slate-900/10 bg-white/85 p-5 shadow-sm"
               >
                 {card.meta ? (
-                  <p className="mb-2 font-semibold text-cyan-800 text-xs uppercase">
+                  <p className="mb-2 font-semibold text-teal-800 text-xs uppercase">
                     {card.meta}
                   </p>
                 ) : null}
@@ -115,7 +115,7 @@ export function TopicPage({ topic }: { topic: TopicPageData }) {
                 {card.href ? (
                   <LocaleLink
                     href={card.href}
-                    className="mt-3 inline-flex items-center gap-2 font-semibold text-cyan-700 text-sm"
+                    className="mt-3 inline-flex items-center gap-2 font-semibold text-teal-700 text-sm"
                   >
                     Open
                     <ArrowRight className="size-4" />
@@ -131,13 +131,13 @@ export function TopicPage({ topic }: { topic: TopicPageData }) {
             <LocaleLink
               key={route}
               href={route}
-              className="group rounded-lg border border-sky-900/15 bg-white/85 p-5 transition hover:border-cyan-400 hover:bg-cyan-50"
+              className="group rounded-lg border border-slate-900/10 bg-white/85 p-5 transition hover:border-teal-300 hover:bg-teal-50"
             >
               <div className="flex items-center justify-between gap-3">
                 <h2 className="font-display font-bold text-slate-950 text-xl">
                   {getRelatedRouteLabel(route)}
                 </h2>
-                <ArrowRight className="size-4 shrink-0 text-cyan-700 transition group-hover:translate-x-0.5" />
+                <ArrowRight className="size-4 shrink-0 text-teal-700 transition group-hover:translate-x-0.5" />
               </div>
               <p className="mt-3 text-slate-600 text-sm leading-6">
                 Continue here when this route matches your next Drain the Lake
@@ -147,7 +147,7 @@ export function TopicPage({ topic }: { topic: TopicPageData }) {
           ))}
         </section>
 
-        <article className="rounded-lg border border-sky-900/15 bg-white/90 p-6 shadow-sm md:p-8">
+        <article className="rounded-lg border border-slate-900/10 bg-white/90 p-6 shadow-sm md:p-8">
           <div className="space-y-8">
             {topic.sections.map((section) => (
               <section key={section.heading}>
@@ -173,14 +173,14 @@ export function TopicPage({ topic }: { topic: TopicPageData }) {
           <div className="mt-10 flex flex-wrap gap-3">
             <Button
               asChild
-              className="bg-cyan-600 text-white hover:bg-cyan-700"
+              className="bg-teal-700 text-white hover:bg-teal-800"
             >
               <LocaleLink href="/guides">All Guides</LocaleLink>
             </Button>
             <Button
               asChild
               variant="outline"
-              className="border-cyan-700 bg-white text-cyan-800 hover:bg-cyan-50"
+              className="border-teal-700 bg-white text-teal-800 hover:bg-teal-50"
             >
               <LocaleLink href="/tools/route-efficiency">Route Tool</LocaleLink>
             </Button>

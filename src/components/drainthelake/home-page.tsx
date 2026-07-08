@@ -152,17 +152,17 @@ export function DrainTheLakeHomePage() {
   return (
     <div className="text-slate-950">
       <JsonLd data={jsonLd} />
-      <section className="relative overflow-hidden border-sky-900/10 border-b bg-[linear-gradient(135deg,#e7fbff_0%,#f8fff1_45%,#ffffff_100%)]">
+      <section className="relative overflow-hidden border-slate-900/10 border-b bg-[linear-gradient(135deg,#f4f8f6_0%,#edf4f1_48%,#ffffff_100%)]">
         <Container className="px-4 py-8 md:py-10">
           <div className="grid items-center gap-7 lg:grid-cols-[minmax(0,1fr)_420px]">
             <div className="min-w-0">
               <div className="mb-4 flex flex-wrap items-center gap-2">
-                <Badge className="bg-cyan-600 text-white">
+                <Badge className="bg-teal-700 text-white">
                   Roblox incremental simulator
                 </Badge>
                 <Badge
                   variant="outline"
-                  className="border-sky-900/20 bg-white/70 text-slate-700"
+                  className="border-slate-900/15 bg-white/70 text-slate-700"
                 >
                   Codes, routes, tokens, depth
                 </Badge>
@@ -178,7 +178,7 @@ export function DrainTheLakeHomePage() {
               <div className="mt-5 flex flex-wrap gap-3">
                 <Button
                   asChild
-                  className="bg-cyan-600 text-white hover:bg-cyan-700"
+                  className="bg-teal-700 text-white hover:bg-teal-800"
                 >
                   <LocaleLink href="/guides/beginner-guide">
                     Start Route
@@ -188,14 +188,14 @@ export function DrainTheLakeHomePage() {
                 <Button
                   asChild
                   variant="outline"
-                  className="border-cyan-700 bg-white text-cyan-800 hover:bg-cyan-50"
+                  className="border-teal-700 bg-white text-teal-800 hover:bg-teal-50"
                 >
                   <LocaleLink href="/codes">Codes Status</LocaleLink>
                 </Button>
                 <Button
                   asChild
                   variant="outline"
-                  className="border-sky-900/20 bg-white text-slate-800 hover:bg-slate-50"
+                  className="border-slate-900/15 bg-white text-slate-800 hover:bg-slate-50"
                 >
                   <a
                     href={officialGameFacts.officialRobloxUrl}
@@ -214,7 +214,7 @@ export function DrainTheLakeHomePage() {
                     <LocaleLink
                       key={link.href}
                       href={link.href}
-                      className="inline-flex min-w-0 items-center gap-2 rounded-md border border-sky-900/15 bg-white/75 px-3 py-2 font-medium text-slate-700 text-sm transition hover:border-cyan-400 hover:text-cyan-800"
+                      className="inline-flex min-w-0 items-center gap-2 rounded-md border border-slate-900/10 bg-white/75 px-3 py-2 font-medium text-slate-700 text-sm transition hover:border-teal-300 hover:text-teal-800"
                     >
                       <Icon className="size-4 shrink-0" />
                       <span className="min-w-0 break-words">{link.label}</span>
@@ -223,20 +223,20 @@ export function DrainTheLakeHomePage() {
                 })}
               </div>
               <div className="mt-5 grid max-w-3xl gap-3 sm:grid-cols-3">
-                <div className="rounded-lg border border-sky-900/15 bg-white/75 p-3">
-                  <p className="font-display font-black text-2xl text-cyan-800">
+                <div className="rounded-lg border border-slate-900/10 bg-white/75 p-3">
+                  <p className="font-display font-black text-2xl text-teal-800">
                     {formatNumber(officialGameFacts.visitsAtCheck)}
                   </p>
                   <p className="text-slate-600 text-xs">Roblox visits</p>
                 </div>
-                <div className="rounded-lg border border-sky-900/15 bg-white/75 p-3">
-                  <p className="font-display font-black text-2xl text-cyan-800">
+                <div className="rounded-lg border border-slate-900/10 bg-white/75 p-3">
+                  <p className="font-display font-black text-2xl text-teal-800">
                     {formatNumber(officialGameFacts.activePlayersAtCheck)}
                   </p>
                   <p className="text-slate-600 text-xs">active at check</p>
                 </div>
-                <div className="rounded-lg border border-sky-900/15 bg-white/75 p-3">
-                  <p className="font-display font-black text-2xl text-cyan-800">
+                <div className="rounded-lg border border-slate-900/10 bg-white/75 p-3">
+                  <p className="font-display font-black text-2xl text-teal-800">
                     {officialGameFacts.maxPlayers}
                   </p>
                   <p className="text-slate-600 text-xs">players per server</p>
@@ -244,7 +244,7 @@ export function DrainTheLakeHomePage() {
               </div>
             </div>
             <div className="min-w-0">
-              <div className="overflow-hidden rounded-lg border border-sky-900/15 bg-slate-950 shadow-xl shadow-cyan-950/20">
+              <div className="overflow-hidden rounded-lg border border-slate-900/10 bg-[#10232a] shadow-xl shadow-slate-950/10">
                 <div className="relative aspect-video">
                   <iframe
                     className="absolute inset-0 h-full w-full"
@@ -257,14 +257,14 @@ export function DrainTheLakeHomePage() {
                 </div>
                 <div className="flex items-center justify-between gap-3 px-4 py-3 text-slate-200 text-sm">
                   <span className="inline-flex items-center gap-2">
-                    <BadgeCheck className="size-4 text-cyan-300" />
+                    <BadgeCheck className="size-4 text-teal-200" />
                     Gameplay guide reference
                   </span>
                   <a
                     href="https://www.youtube.com/watch?v=egTySQBzI7Y"
                     target="_blank"
                     rel="noreferrer"
-                    className="text-cyan-200 hover:text-white"
+                    className="text-teal-100 hover:text-white"
                   >
                     YouTube
                   </a>
@@ -277,26 +277,26 @@ export function DrainTheLakeHomePage() {
 
       <Container className="space-y-8 px-4 py-8">
         <section className="grid gap-4 lg:grid-cols-[minmax(0,1.1fr)_minmax(320px,0.9fr)]">
-          <div className="rounded-lg border border-sky-900/15 bg-white/85 p-5 shadow-sm">
+          <div className="rounded-lg border border-slate-900/10 bg-white/85 p-5 shadow-sm">
             <div className="mb-4 flex items-center justify-between gap-4">
               <div>
-                <p className="font-semibold text-cyan-800 text-xs uppercase">
+                <p className="font-semibold text-teal-800 text-xs uppercase">
                   Start here
                 </p>
                 <h2 className="font-display font-black text-2xl">
                   Your first Drain the Lake route
                 </h2>
               </div>
-              <BookOpen className="size-6 text-cyan-700" />
+              <BookOpen className="size-6 text-teal-700" />
             </div>
             <div className="grid gap-3">
               {startSteps.map((step, index) => (
                 <LocaleLink
                   key={step.href}
                   href={step.href}
-                  className="group flex gap-3 rounded-lg border border-sky-900/10 bg-slate-50 p-4 transition hover:border-cyan-400 hover:bg-cyan-50"
+                  className="group flex gap-3 rounded-lg border border-slate-900/10 bg-slate-50 p-4 transition hover:border-teal-300 hover:bg-teal-50"
                 >
-                  <span className="flex size-8 shrink-0 items-center justify-center rounded-md bg-cyan-600 font-bold text-white">
+                  <span className="flex size-8 shrink-0 items-center justify-center rounded-md bg-teal-700 font-bold text-white">
                     {index + 1}
                   </span>
                   <span className="min-w-0">
@@ -307,14 +307,14 @@ export function DrainTheLakeHomePage() {
                       {step.body}
                     </span>
                   </span>
-                  <ArrowRight className="ml-auto size-4 shrink-0 text-cyan-700 transition group-hover:translate-x-0.5" />
+                  <ArrowRight className="ml-auto size-4 shrink-0 text-teal-700 transition group-hover:translate-x-0.5" />
                 </LocaleLink>
               ))}
             </div>
           </div>
 
-          <div className="rounded-lg border border-sky-900/15 bg-slate-950 p-5 text-white shadow-sm">
-            <p className="font-semibold text-cyan-200 text-xs uppercase">
+          <div className="rounded-lg border border-slate-900/10 bg-[#10232a] p-5 text-white shadow-sm">
+            <p className="font-semibold text-teal-100 text-xs uppercase">
               Status board
             </p>
             <h2 className="mt-1 font-display font-black text-2xl">
@@ -323,11 +323,11 @@ export function DrainTheLakeHomePage() {
             <div className="mt-4 grid gap-3">
               <LocaleLink
                 href="/codes"
-                className="rounded-lg border border-white/10 bg-white/5 p-4 transition hover:border-cyan-300"
+                className="rounded-lg border border-white/10 bg-white/5 p-4 transition hover:border-teal-300"
               >
                 <div className="flex items-center justify-between gap-3">
                   <strong>0 verified active codes</strong>
-                  <RadioTower className="size-5 text-cyan-200" />
+                  <RadioTower className="size-5 text-teal-100" />
                 </div>
                 <p className="mt-2 text-slate-300 text-sm leading-6">
                   Keep a code-watch page without publishing fake rewards.
@@ -335,11 +335,11 @@ export function DrainTheLakeHomePage() {
               </LocaleLink>
               <LocaleLink
                 href="/updates"
-                className="rounded-lg border border-white/10 bg-white/5 p-4 transition hover:border-cyan-300"
+                className="rounded-lg border border-white/10 bg-white/5 p-4 transition hover:border-teal-300"
               >
                 <div className="flex items-center justify-between gap-3">
                   <strong>Retest after updates</strong>
-                  <Badge className="bg-cyan-200 text-slate-950">
+                  <Badge className="bg-teal-100 text-slate-950">
                     Route note
                   </Badge>
                 </div>
@@ -368,7 +368,7 @@ export function DrainTheLakeHomePage() {
         <section>
           <div className="mb-4 flex items-end justify-between gap-4">
             <div>
-              <p className="font-semibold text-cyan-800 text-xs uppercase">
+              <p className="font-semibold text-teal-800 text-xs uppercase">
                 Wiki hubs
               </p>
               <h2 className="font-display font-black text-3xl">
@@ -378,7 +378,7 @@ export function DrainTheLakeHomePage() {
             <Button
               asChild
               variant="outline"
-              className="hidden border-cyan-700 text-cyan-800 sm:inline-flex"
+              className="hidden border-teal-700 text-teal-800 sm:inline-flex"
             >
               <LocaleLink href="/guides">All Guides</LocaleLink>
             </Button>
@@ -389,10 +389,10 @@ export function DrainTheLakeHomePage() {
               return (
                 <article
                   key={module.title}
-                  className="rounded-lg border border-sky-900/15 bg-white/85 p-5 shadow-sm"
+                  className="rounded-lg border border-slate-900/10 bg-white/85 p-5 shadow-sm"
                 >
                   <div className="flex items-center gap-3">
-                    <span className="flex size-10 items-center justify-center rounded-md bg-cyan-100 text-cyan-800">
+                    <span className="flex size-10 items-center justify-center rounded-md bg-teal-50 text-teal-800">
                       <Icon className="size-5" />
                     </span>
                     <h3 className="font-display font-bold text-xl">
@@ -407,7 +407,7 @@ export function DrainTheLakeHomePage() {
                       <LocaleLink
                         key={href}
                         href={href}
-                        className="flex min-w-0 items-center justify-between gap-3 rounded-md border border-sky-900/10 bg-slate-50 px-3 py-2 text-slate-700 text-sm hover:border-cyan-400 hover:text-cyan-800"
+                        className="flex min-w-0 items-center justify-between gap-3 rounded-md border border-slate-900/10 bg-slate-50 px-3 py-2 text-slate-700 text-sm hover:border-teal-300 hover:text-teal-800"
                       >
                         <span className="min-w-0 break-words">
                           {getRouteLabel(href)}
@@ -422,24 +422,24 @@ export function DrainTheLakeHomePage() {
           </div>
         </section>
 
-        <section className="rounded-lg border border-sky-900/15 bg-white/85 p-5 shadow-sm">
+        <section className="rounded-lg border border-slate-900/10 bg-white/85 p-5 shadow-sm">
           <div className="mb-4 flex items-center justify-between gap-4">
             <div>
-              <p className="font-semibold text-cyan-800 text-xs uppercase">
+              <p className="font-semibold text-teal-800 text-xs uppercase">
                 Latest guides
               </p>
               <h2 className="font-display font-black text-3xl">
                 Current launch coverage
               </h2>
             </div>
-            <BookOpen className="size-6 text-cyan-700" />
+            <BookOpen className="size-6 text-teal-700" />
           </div>
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
             {guides.slice(0, 6).map((guide) => (
               <LocaleLink
                 key={guide.slug}
                 href={`/guides/${guide.slug}`}
-                className="group overflow-hidden rounded-lg border border-sky-900/10 bg-slate-50 transition hover:border-cyan-400 hover:bg-cyan-50"
+                className="group overflow-hidden rounded-lg border border-slate-900/10 bg-slate-50 transition hover:border-teal-300 hover:bg-teal-50"
               >
                 <div className="relative aspect-video">
                   <Image
@@ -451,7 +451,7 @@ export function DrainTheLakeHomePage() {
                   />
                 </div>
                 <div className="p-4">
-                  <p className="font-semibold text-cyan-800 text-xs uppercase">
+                  <p className="font-semibold text-teal-800 text-xs uppercase">
                     {guide.category}
                   </p>
                   <h3 className="mt-2 font-display font-bold text-xl text-slate-950">
@@ -466,8 +466,8 @@ export function DrainTheLakeHomePage() {
           </div>
         </section>
 
-        <section className="rounded-lg border border-sky-900/15 bg-slate-950 p-5 text-white">
-          <p className="font-semibold text-cyan-200 text-xs uppercase">
+        <section className="rounded-lg border border-slate-900/10 bg-[#10232a] p-5 text-white">
+          <p className="font-semibold text-teal-100 text-xs uppercase">
             Keyword hub
           </p>
           <h2 className="mt-1 font-display font-black text-3xl">
@@ -478,7 +478,7 @@ export function DrainTheLakeHomePage() {
               <LocaleLink
                 key={`${item.keyword}-${item.href}`}
                 href={item.href}
-                className="rounded-md border border-white/10 bg-white/5 px-3 py-2 text-slate-200 text-sm transition hover:border-cyan-300 hover:text-white"
+                className="rounded-md border border-white/10 bg-white/5 px-3 py-2 text-slate-200 text-sm transition hover:border-teal-300 hover:text-white"
               >
                 {item.keyword}
               </LocaleLink>
@@ -491,9 +491,9 @@ export function DrainTheLakeHomePage() {
             <LocaleLink
               key={topic.route}
               href={topic.route}
-              className="rounded-lg border border-sky-900/15 bg-white/85 p-4 transition hover:border-cyan-400 hover:bg-cyan-50"
+              className="rounded-lg border border-slate-900/10 bg-white/85 p-4 transition hover:border-teal-300 hover:bg-teal-50"
             >
-              <p className="font-semibold text-cyan-800 text-xs uppercase">
+              <p className="font-semibold text-teal-800 text-xs uppercase">
                 {topic.navGroup}
               </p>
               <h3 className="mt-2 font-display font-bold text-lg text-slate-950">

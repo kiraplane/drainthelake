@@ -25,7 +25,7 @@ export default function RouteEfficiencyPage() {
     <div className="py-8 text-slate-950 md:py-12">
       <Container className="space-y-8 px-0">
         <header className="max-w-3xl space-y-4">
-          <div className="inline-flex rounded-md bg-cyan-100 px-3 py-1 font-semibold text-cyan-900 text-xs uppercase">
+          <div className="inline-flex rounded-md bg-teal-50 px-3 py-1 font-semibold text-teal-900 text-xs uppercase">
             Route tool
           </div>
           <h1 className="font-display text-4xl font-black tracking-normal md:text-6xl">

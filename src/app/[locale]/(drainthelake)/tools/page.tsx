@@ -44,7 +44,7 @@ export default function ToolsPage() {
       <JsonLd data={jsonLd} />
       <Container className="space-y-8 px-0">
         <header className="max-w-3xl space-y-4">
-          <div className="inline-flex rounded-md bg-cyan-100 px-3 py-1 font-semibold text-cyan-900 text-xs uppercase">
+          <div className="inline-flex rounded-md bg-teal-50 px-3 py-1 font-semibold text-teal-900 text-xs uppercase">
             Tools
           </div>
           <h1 className="font-display text-4xl font-black tracking-normal md:text-6xl">
@@ -57,13 +57,13 @@ export default function ToolsPage() {
         </header>
 
         <section className="grid gap-5 md:grid-cols-2">
-          <article className="rounded-lg border border-sky-900/15 bg-white/90 p-6 shadow-sm">
+          <article className="rounded-lg border border-slate-900/10 bg-white/90 p-6 shadow-sm">
             <div className="flex items-center gap-3">
-              <span className="flex size-11 items-center justify-center rounded-md bg-cyan-100 text-cyan-800">
+              <span className="flex size-11 items-center justify-center rounded-md bg-teal-50 text-teal-800">
                 <Calculator className="size-6" />
               </span>
               <div>
-                <p className="font-semibold text-cyan-800 text-xs uppercase">
+                <p className="font-semibold text-teal-800 text-xs uppercase">
                   Estimate
                 </p>
                 <h2 className="font-display font-bold text-2xl">
@@ -78,7 +78,7 @@ export default function ToolsPage() {
             </p>
             <Button
               asChild
-              className="mt-5 bg-cyan-600 text-white hover:bg-cyan-700"
+              className="mt-5 bg-teal-700 text-white hover:bg-teal-800"
             >
               <LocaleLink href="/tools/route-efficiency">
                 Open tool
@@ -87,13 +87,13 @@ export default function ToolsPage() {
             </Button>
           </article>
 
-          <article className="rounded-lg border border-sky-900/15 bg-slate-950 p-6 text-white shadow-sm">
+          <article className="rounded-lg border border-slate-900/10 bg-[#10232a] p-6 text-white shadow-sm">
             <div className="flex items-center gap-3">
-              <span className="flex size-11 items-center justify-center rounded-md bg-cyan-200 text-slate-950">
+              <span className="flex size-11 items-center justify-center rounded-md bg-teal-100 text-slate-950">
                 <Gauge className="size-6" />
               </span>
               <div>
-                <p className="font-semibold text-cyan-200 text-xs uppercase">
+                <p className="font-semibold text-teal-100 text-xs uppercase">
                   Rule
                 </p>
                 <h2 className="font-display font-bold text-2xl">

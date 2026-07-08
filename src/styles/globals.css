@@ -264,46 +264,46 @@
 }
 
 :root {
-  --background: #070302;
-  --foreground: #fff2e0;
-  --card: #150905;
-  --card-foreground: #fff2e0;
-  --popover: #150905;
-  --popover-foreground: #fff2e0;
+  --background: #f4f7f5;
+  --foreground: #10202a;
+  --card: #ffffff;
+  --card-foreground: #10202a;
+  --popover: #ffffff;
+  --popover-foreground: #10202a;
 
-  --primary: #c2410c;
-  --primary-foreground: #fff2e0;
+  --primary: #0f766e;
+  --primary-foreground: #f8fafc;
 
-  --secondary: #f59e0b;
-  --secondary-foreground: #150905;
+  --secondary: #dce8e4;
+  --secondary-foreground: #10202a;
 
-  --muted: #1f120c;
-  --muted-foreground: #c6b19f;
+  --muted: #e8efec;
+  --muted-foreground: #566761;
 
-  --accent: #3b1609;
-  --accent-foreground: #fff2e0;
+  --accent: #e6f0ed;
+  --accent-foreground: #0f3f3a;
 
   --destructive: #dc2626;
   --destructive-foreground: #fff2e0;
 
-  --border: #4b2417;
-  --input: #4b2417;
-  --ring: #f97316;
+  --border: #cfdbd7;
+  --input: #c7d4d0;
+  --ring: #0f766e;
 
-  --chart-1: #f97316;
-  --chart-2: #f59e0b;
-  --chart-3: #dc2626;
-  --chart-4: #7c2d12;
-  --chart-5: #fde68a;
+  --chart-1: #0f766e;
+  --chart-2: #2563eb;
+  --chart-3: #d97706;
+  --chart-4: #64748b;
+  --chart-5: #14b8a6;
 
-  --sidebar: #070302;
-  --sidebar-foreground: #fff2e0;
-  --sidebar-primary: #c2410c;
-  --sidebar-primary-foreground: #fff2e0;
-  --sidebar-accent: #1f120c;
-  --sidebar-accent-foreground: #fff2e0;
-  --sidebar-border: #4b2417;
-  --sidebar-ring: #f97316;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #10202a;
+  --sidebar-primary: #0f766e;
+  --sidebar-primary-foreground: #f8fafc;
+  --sidebar-accent: #edf4f1;
+  --sidebar-accent-foreground: #10202a;
+  --sidebar-border: #cfdbd7;
+  --sidebar-ring: #0f766e;
   --font-sans: var(--font-noto-sans);
   --font-serif: var(--font-noto-serif);
   --font-mono: var(--font-noto-sans-mono);
@@ -392,7 +392,7 @@ body {
  * Drain the Lake theme colors
  */
 .theme-default {
-  --primary: #0891b2;
+  --primary: #0f766e;
   --primary-foreground: #f8fafc;
 }
 

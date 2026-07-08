@@ -105,12 +105,12 @@ export default async function GuidePage({
       <JsonLd data={jsonLd} />
       <AdsterraSideRails />
       <Container className="px-0">
-        <article className="rounded-lg border border-sky-900/15 bg-white/90 p-6 shadow-sm md:p-8">
+        <article className="rounded-lg border border-slate-900/10 bg-white/90 p-6 shadow-sm md:p-8">
           <div className="flex flex-wrap gap-2">
-            <Badge className="bg-cyan-600 text-white">{guide.category}</Badge>
+            <Badge className="bg-teal-700 text-white">{guide.category}</Badge>
             <Badge
               variant="outline"
-              className="border-sky-900/15 text-slate-600"
+              className="border-slate-900/10 text-slate-600"
             >
               {guide.difficulty}
             </Badge>
@@ -118,7 +118,7 @@ export default async function GuidePage({
               <Badge
                 key={tag}
                 variant="outline"
-                className="border-sky-900/15 text-slate-600"
+                className="border-slate-900/10 text-slate-600"
               >
                 {tag}
               </Badge>
@@ -132,7 +132,7 @@ export default async function GuidePage({
             {guide.summary}
           </p>
 
-          <div className="relative mt-8 aspect-video overflow-hidden rounded-lg border border-sky-900/15 bg-slate-200">
+          <div className="relative mt-8 aspect-video overflow-hidden rounded-lg border border-slate-900/10 bg-slate-200">
             <Image
               src={guide.coverImageUrl}
               alt={`${guide.title} cover`}
@@ -165,7 +165,7 @@ export default async function GuidePage({
                 ) : null}
 
                 {index === 1 && guide.video ? (
-                  <div className="mt-8 overflow-hidden rounded-lg border border-sky-900/15 bg-slate-950">
+                  <div className="mt-8 overflow-hidden rounded-lg border border-slate-900/10 bg-[#10232a]">
                     <iframe
                       className="aspect-video w-full"
                       src={`https://www.youtube.com/embed/${guide.video.id}`}
@@ -174,13 +174,13 @@ export default async function GuidePage({
                       allowFullScreen
                       loading="lazy"
                     />
-                    <div className="bg-slate-950 px-4 py-3 text-slate-300 text-sm">
+                    <div className="bg-[#10232a] px-4 py-3 text-slate-300 text-sm">
                       Walkthrough cross-check:{' '}
                       <a
                         href={guide.video.url}
                         target="_blank"
                         rel="noreferrer"
-                        className="text-cyan-200 underline underline-offset-4"
+                        className="text-teal-100 underline underline-offset-4"
                       >
                         {guide.video.title}
                       </a>{' '}
@@ -196,7 +196,7 @@ export default async function GuidePage({
             <FaqSection items={guide.faq} />
           </div>
 
-          <section className="mt-10 rounded-lg border border-sky-900/15 bg-slate-50 p-5">
+          <section className="mt-10 rounded-lg border border-slate-900/10 bg-slate-50 p-5">
             <h2 className="font-display text-2xl font-bold text-slate-950">
               Related next steps
             </h2>
@@ -205,7 +205,7 @@ export default async function GuidePage({
                 <LocaleLink
                   key={route}
                   href={route}
-                  className="flex min-w-0 items-center justify-between gap-3 rounded-md border border-sky-900/15 bg-white px-4 py-3 text-slate-700 text-sm transition hover:border-cyan-400 hover:text-cyan-800"
+                  className="flex min-w-0 items-center justify-between gap-3 rounded-md border border-slate-900/10 bg-white px-4 py-3 text-slate-700 text-sm transition hover:border-teal-300 hover:text-teal-800"
                 >
                   <span className="min-w-0 break-words">
                     {relatedRouteLabels[route] ??

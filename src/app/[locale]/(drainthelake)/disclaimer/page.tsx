@@ -24,7 +24,7 @@ export default function DisclaimerPage() {
   return (
     <div className="py-8 text-slate-950 md:py-12">
       <Container className="px-0">
-        <article className="max-w-3xl rounded-lg border border-sky-900/15 bg-white/90 p-6 shadow-sm md:p-8">
+        <article className="max-w-3xl rounded-lg border border-slate-900/10 bg-white/90 p-6 shadow-sm md:p-8">
           <h1 className="font-display text-4xl font-black">
             Drain the Lake Wiki Disclaimer
           </h1>
@@ -40,7 +40,7 @@ export default function DisclaimerPage() {
                 href={officialGameFacts.officialRobloxUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="text-cyan-700 underline underline-offset-4"
+                className="text-teal-700 underline underline-offset-4"
               >
                 {officialGameFacts.officialRobloxUrl}
               </a>

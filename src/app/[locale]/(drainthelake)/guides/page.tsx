@@ -47,7 +47,7 @@ export default function GuidesPage() {
       <JsonLd data={jsonLd} />
       <Container className="space-y-8 px-0">
         <header className="max-w-3xl space-y-4">
-          <Badge className="bg-cyan-600 text-white">Guides</Badge>
+          <Badge className="bg-teal-700 text-white">Guides</Badge>
           <h1 className="font-display text-4xl font-black tracking-normal md:text-6xl">
             Drain the Lake Guides
           </h1>
@@ -60,7 +60,7 @@ export default function GuidesPage() {
 
         <AdsterraAdFrame
           slot="banner-728x90"
-          className="rounded-lg border border-sky-900/15 bg-white/85 py-4"
+          className="rounded-lg border border-slate-900/10 bg-white/85 py-4"
           label
         />
 
@@ -68,7 +68,7 @@ export default function GuidesPage() {
           {categories.map((category) => (
             <div
               key={category}
-              className="rounded-lg border border-sky-900/15 bg-white/85 p-5"
+              className="rounded-lg border border-slate-900/10 bg-white/85 p-5"
             >
               <h2 className="font-display font-bold text-xl">{category}</h2>
               <p className="mt-2 text-slate-600 text-sm leading-6">
@@ -82,9 +82,9 @@ export default function GuidesPage() {
           {guides.map((guide) => (
             <article
               key={guide.slug}
-              className="overflow-hidden rounded-lg border border-sky-900/15 bg-white/90 shadow-sm"
+              className="overflow-hidden rounded-lg border border-slate-900/10 bg-white/90 shadow-sm"
             >
-              <div className="relative aspect-video border-sky-900/10 border-b">
+              <div className="relative aspect-video border-slate-900/10 border-b">
                 <Image
                   src={guide.coverImageUrl}
                   alt={`${guide.title} cover`}
@@ -93,7 +93,7 @@ export default function GuidesPage() {
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/65 to-transparent" />
-                <Badge className="absolute top-4 left-4 bg-cyan-200 text-slate-950">
+                <Badge className="absolute top-4 left-4 bg-teal-100 text-slate-950">
                   {guide.category}
                 </Badge>
               </div>
@@ -101,7 +101,7 @@ export default function GuidesPage() {
                 <div className="flex flex-wrap gap-2">
                   <Badge
                     variant="outline"
-                    className="border-sky-900/15 text-slate-600"
+                    className="border-slate-900/10 text-slate-600"
                   >
                     {guide.difficulty}
                   </Badge>
@@ -109,7 +109,7 @@ export default function GuidesPage() {
                     <Badge
                       key={tag}
                       variant="outline"
-                      className="border-sky-900/15 text-slate-600"
+                      className="border-slate-900/10 text-slate-600"
                     >
                       {tag}
                     </Badge>
@@ -123,7 +123,7 @@ export default function GuidesPage() {
                 </p>
                 <Button
                   asChild
-                  className="mt-5 bg-cyan-600 text-white hover:bg-cyan-700"
+                  className="mt-5 bg-teal-700 text-white hover:bg-teal-800"
                 >
                   <LocaleLink href={`/guides/${guide.slug}`}>
                     Read guide

@@ -20,7 +20,7 @@ export function FaqSection({
     <section
       id="faq"
       className={cn(
-        'rounded-lg border border-sky-900/40 bg-white/80 p-6 shadow-sm shadow-sky-950/5 backdrop-blur',
+        'rounded-lg border border-slate-900/10 bg-white/80 p-6 shadow-sm shadow-slate-950/5 backdrop-blur',
         className
       )}
     >
@@ -30,15 +30,15 @@ export function FaqSection({
       <Accordion
         type="single"
         collapsible
-        className="mt-6 w-full rounded-lg border border-sky-900/15 bg-slate-50 px-5"
+        className="mt-6 w-full rounded-lg border border-slate-900/10 bg-slate-50 px-5"
       >
         {items.map((item, index) => (
           <AccordionItem
             key={item.question}
             value={`faq-${index}`}
-            className="border-sky-900/15"
+            className="border-slate-900/10"
           >
-            <AccordionTrigger className="cursor-pointer py-4 text-left text-base font-semibold text-slate-950 hover:text-cyan-700 hover:no-underline">
+            <AccordionTrigger className="cursor-pointer py-4 text-left text-base font-semibold text-slate-950 hover:text-teal-700 hover:no-underline">
               {item.question}
             </AccordionTrigger>
             <AccordionContent className="pb-5 text-slate-700 text-sm leading-7">

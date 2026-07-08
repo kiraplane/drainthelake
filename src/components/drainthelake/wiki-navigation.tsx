@@ -158,8 +158,8 @@ function WikiNavLinkItem({
       className={cn(
         'group flex min-w-0 items-center justify-between gap-3 rounded-md border px-3 py-2 text-sm leading-6 transition',
         isActive
-          ? 'border-cyan-500 bg-cyan-500 font-semibold text-slate-950'
-          : 'border-sky-900/15 bg-white/80 text-slate-700 hover:border-cyan-400 hover:bg-cyan-50 hover:text-slate-950'
+          ? 'border-teal-700 bg-teal-700 font-semibold text-white'
+          : 'border-slate-900/10 bg-white/80 text-slate-700 hover:border-teal-300 hover:bg-teal-50 hover:text-slate-950'
       )}
     >
       <span className="inline-flex min-w-0 items-center gap-2">
@@ -169,7 +169,7 @@ function WikiNavLinkItem({
       <ArrowRight
         className={cn(
           'size-4 shrink-0',
-          isActive ? 'text-slate-950' : 'text-cyan-700'
+          isActive ? 'text-white' : 'text-teal-700'
         )}
       />
     </LocaleLink>
@@ -178,19 +178,21 @@ function WikiNavLinkItem({
 
 function CodesSidebarCard() {
   return (
-    <div className="rounded-lg border border-sky-900/15 bg-white/85 p-4">
+    <div className="rounded-lg border border-slate-900/10 bg-white/85 p-4">
       <div className="mb-4 flex items-center justify-between gap-3">
         <h2 className="font-display font-bold text-lg text-slate-950">
           Codes Status
         </h2>
-        <Badge className="bg-amber-300 text-slate-950">0 active</Badge>
+        <Badge className="bg-amber-100 text-amber-900 ring-1 ring-amber-200">
+          0 active
+        </Badge>
       </div>
       <p className="text-slate-600 text-xs leading-5">
         {codeCheckSummary.status}
       </p>
       <LocaleLink
         href="/codes"
-        className="mt-4 flex items-center justify-center gap-2 border-sky-900/15 border-t pt-3 font-medium text-slate-700 text-sm transition hover:text-cyan-700"
+        className="mt-4 flex items-center justify-center gap-2 border-slate-900/10 border-t pt-3 font-medium text-slate-700 text-sm transition hover:text-teal-700"
       >
         View code check
         <ArrowRight className="size-4" />
@@ -205,10 +207,10 @@ export function DrainTheLakeMobileMenu({
   currentPath?: string;
 }) {
   return (
-    <details className="mx-4 mb-6 rounded-lg border border-sky-900/15 bg-white/85 p-4 shadow-sm xl:hidden">
+    <details className="mx-4 mb-6 rounded-lg border border-slate-900/10 bg-white/85 p-4 shadow-sm xl:hidden">
       <summary className="flex cursor-pointer list-none items-center justify-between gap-3 font-semibold text-slate-950 [&::-webkit-details-marker]:hidden">
         <span className="inline-flex items-center gap-2">
-          <Compass className="size-5 text-cyan-700" />
+          <Compass className="size-5 text-teal-700" />
           Drain the Lake Menu
         </span>
         <ChevronDown className="size-5" />
@@ -246,9 +248,9 @@ export function DrainTheLakeRouteSidebar({
   currentPath?: string;
 }) {
   return (
-    <aside className="sticky top-24 hidden max-h-[calc(100vh-7rem)] overflow-y-auto rounded-lg border border-sky-900/15 bg-white/85 p-4 shadow-sm shadow-sky-950/10 xl:block">
-      <div className="mb-4 rounded-lg bg-slate-950 p-4 text-white">
-        <p className="font-semibold text-cyan-200 text-xs uppercase">
+    <aside className="sticky top-24 hidden max-h-[calc(100vh-7rem)] overflow-y-auto rounded-lg border border-slate-900/10 bg-white/85 p-4 shadow-sm shadow-slate-950/5 xl:block">
+      <div className="mb-4 rounded-lg bg-[#10232a] p-4 text-white">
+        <p className="font-semibold text-teal-100 text-xs uppercase">
           Drain the Lake Wiki
         </p>
         <h2 className="mt-1 font-display font-black text-xl">Route Board</h2>
@@ -262,15 +264,15 @@ export function DrainTheLakeRouteSidebar({
           const isOpen = isGroupCurrentPath(currentPath, group);
           return (
             <details key={group.title} open={isOpen} className="group">
-              <summary className="flex cursor-pointer list-none items-center justify-between rounded-md px-2 py-2 font-semibold text-slate-700 text-sm hover:bg-cyan-50 [&::-webkit-details-marker]:hidden">
+              <summary className="flex cursor-pointer list-none items-center justify-between rounded-md px-2 py-2 font-semibold text-slate-700 text-sm hover:bg-teal-50 [&::-webkit-details-marker]:hidden">
                 <span className="inline-flex items-center gap-2">
-                  <Icon className="size-4 text-cyan-700" />
+                  <Icon className="size-4 text-teal-700" />
                   {group.title}
                 </span>
                 <span className="inline-flex items-center gap-2">
                   <Badge
                     variant="outline"
-                    className="border-sky-900/15 text-slate-500"
+                    className="border-slate-900/10 text-slate-500"
                   >
                     {group.links.length}
                   </Badge>
@@ -308,9 +310,9 @@ export function DrainTheLakePageShell({
   return (
     <>
       <DrainTheLakeMobileMenu currentPath={currentPath} />
-      <div className="mx-auto grid w-full max-w-[1480px] gap-6 px-4 xl:grid-cols-[260px_minmax(0,1fr)] xl:px-6">
-        <DrainTheLakeRouteSidebar currentPath={currentPath} />
+      <div className="mx-auto grid w-full max-w-[1480px] gap-6 px-4 xl:grid-cols-[minmax(0,1fr)_280px] xl:px-6">
         <div className="min-w-0">{children}</div>
+        <DrainTheLakeRouteSidebar currentPath={currentPath} />
       </div>
     </>
   );
@@ -318,9 +320,9 @@ export function DrainTheLakePageShell({
 
 export function DisclaimerNote() {
   return (
-    <div className="rounded-lg border border-sky-900/15 bg-white/80 p-4 text-slate-600 text-sm leading-6">
+    <div className="rounded-lg border border-slate-900/10 bg-white/80 p-4 text-slate-600 text-sm leading-6">
       <div className="mb-2 flex items-center gap-2 font-semibold text-slate-950">
-        <ShieldQuestion className="size-4 text-cyan-700" />
+        <ShieldQuestion className="size-4 text-teal-700" />
         Independent guide site
       </div>
       Drain the Lake Wiki is an independent guide hub. Roblox and Drain the Lake
