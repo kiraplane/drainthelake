@@ -213,6 +213,18 @@ export const guides: Guide[] = [
         ],
       },
       {
+        heading: 'Route phone progress before badge cleanup',
+        paragraphs: [
+          'The phone route is the strongest ending-style intent in current search. Treat it as the main clear path: stable bucket loop, enough upgrades for deeper water, then one focused phone push.',
+          'Badge cleanup belongs around that route, not ahead of it. If a badge takes you away from the phone path for too long, bank the next useful upgrade first, then return for the badge with a faster route.',
+        ],
+        bullets: [
+          'Main route: fill, drain, upgrade, push depth, recover phone.',
+          'Side route: collect easy badges that naturally happen on the main path.',
+          'Cleanup route: all buckets, risky depth, and shark-style goals after income is stable.',
+        ],
+      },
+      {
         heading: 'Save ending attempts for a stable late route',
         paragraphs: [
           'The phone ending should be treated as a finish objective, not the first target. Before pushing it, make sure you can run deeper water without losing time to confusion. If you still forget where to drain, or you still need too many trips to afford one useful upgrade, improve the loop before making an ending push.',
@@ -416,6 +428,13 @@ export const guides: Guide[] = [
         heading: 'Keep shark and depth badges separate from farming',
         paragraphs: [
           'Risk or depth badges can cost time if you mix them into normal farming. Do them as deliberate side attempts after you bank an upgrade, not during the route that is supposed to pay for the next Skill Tree choice.',
+        ],
+      },
+      {
+        heading: 'Use video badge routes as order checks, not scripts',
+        paragraphs: [
+          'Recent all-badges videos are useful because they show the order of goals players care about: easy badges first, phone route later, completion badges last. Do not copy every movement if your upgrades are different.',
+          'Instead, use the video order as a checklist. If your route is slower, stop and farm the upgrade that fixes the slow step before continuing badge cleanup.',
         ],
       },
     ],
