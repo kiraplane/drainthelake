@@ -1,7 +1,7 @@
 import type { DataSource } from './types';
 
-export const CHECKED_AT = '2026-07-08';
-export const OFFICIAL_CHECKED_AT = '2026-07-08';
+export const CHECKED_AT = '2026-07-09';
+export const OFFICIAL_CHECKED_AT = '2026-07-09';
 
 export const officialGameFacts = {
   name: 'Drain the Lake',
@@ -15,7 +15,7 @@ export const officialGameFacts = {
   genre: 'Roblox incremental simulator',
   status: 'Live Roblox experience',
   createdAt: '2026-06-03T21:01:44.521Z',
-  updatedAt: '2026-07-08T03:15:25.8882237Z',
+  updatedAt: '2026-07-09T03:15:25.8882237Z',
   maxPlayers: 12,
   activePlayersAtCheck: 46311,
   visitsAtCheck: 13347417,
