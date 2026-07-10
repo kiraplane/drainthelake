@@ -305,6 +305,26 @@ export const topicPages: TopicPage[] = [
     image: '/drainthelake/og-image.jpg',
     updatedAt: CHECKED_AT,
     featuredRoutes: ['/guides/phone-ending-guide', '/depth', '/badges'],
+    cards: [
+      {
+        title: 'Phone ending route',
+        body: 'Use this as the main finish path: stable depth progress, repeatable token income, and enough upgrades to make the final push predictable.',
+        href: '/guides/phone-ending-guide',
+        meta: 'Main ending',
+      },
+      {
+        title: 'All endings checklist',
+        body: 'Treat "all endings" as a completion checklist. Clear the phone goal, badges, bucket milestones, and late-route unlocks instead of repeating one shallow path.',
+        href: '/badges',
+        meta: 'Completion',
+      },
+      {
+        title: 'Ancient bucket prep',
+        body: 'Ancient bucket searches belong to late completion routing. Do bucket and upgrade checks before trying to force rare or final-route objectives.',
+        href: '/buckets',
+        meta: 'Late route',
+      },
+    ],
     sections: [
       {
         heading: 'Do not force the ending too early',
@@ -318,12 +338,42 @@ export const topicPages: TopicPage[] = [
           'Buckets, Skill Tree progress, depth checkpoints, and badges all tell you whether the account is ready. If those pieces are still weak, the ending attempt will feel like a wall.',
         ],
       },
+      {
+        heading: 'Cover all endings as one completion route',
+        paragraphs: [
+          'Players searching all endings usually need a checklist, not a second copy of the same phone route. Use the phone ending as the anchor, then confirm which badges, buckets, and late progression goals are still missing.',
+          'If a new ending-style goal appears after an update, add it to this route only after the requirement is clear. Until then, the safest public advice is to organize completion work by readiness: depth first, bucket progress second, ending attempt last.',
+        ],
+        bullets: [
+          'Phone objective: finish after the loop is stable.',
+          'Bucket completion: treat rare bucket searches as late-route prep.',
+          'Badge cleanup: use badges to verify the account is ready for final goals.',
+          'Update watch: add new endings only after source-checked requirements exist.',
+        ],
+      },
+      {
+        heading: 'Why ancient bucket belongs here',
+        paragraphs: [
+          'Ancient bucket demand is connected to completion intent. A player looking for it is usually past the first drain route and trying to understand which bucket or late milestone blocks the final checklist.',
+          'Do not chase an ancient bucket-style goal before basic bucket routing, Skill Tree value, and depth progress are comfortable. If the route still feels slow, the missing answer is usually a cheaper upgrade or a cleaner bucket loop, not another ending attempt.',
+        ],
+      },
     ],
     faq: [
       {
         question: 'What ending should I target first?',
         answer:
           'Target the phone objective after the core route is stable enough to support deeper progress.',
+      },
+      {
+        question: 'Should all endings be a separate route?',
+        answer:
+          'Use this endings hub first. It groups the phone ending, bucket milestones, badge cleanup, and late-route checks so players do not bounce between thin duplicate pages.',
+      },
+      {
+        question: 'Is ancient bucket part of the ending route?',
+        answer:
+          'Treat ancient bucket as a late completion signal. Work on bucket progress and upgrades first, then return to final-route goals when the loop is stable.',
       },
       {
         question: 'Why do players search endings?',
