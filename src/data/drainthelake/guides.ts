@@ -554,7 +554,7 @@ export const guides: Guide[] = [
       {
         heading: 'Current status',
         paragraphs: [
-          'No verified public Drain the Lake codes are confirmed as of July 8, 2026. The official Roblox page describes the bucket, tokens, Skill Tree, depth, and phone loop, but it does not currently verify a public code list. Search results include code demand because Roblox simulator players expect codes, not because a reliable active code has been confirmed.',
+          'No verified public Drain the Lake codes are confirmed as of July 11, 2026. The official Roblox page describes the bucket, tokens, Skill Tree, depth, and phone loop, but it does not currently verify a public code list. Search results include code demand because Roblox simulator players expect codes, not because a reliable active code has been confirmed.',
           'That status can change quickly if the developer adds a code box, social drop, or update reward. When it does, the safe rule is to verify the code against the official game or a reliable current source before adding it to a public list.',
         ],
       },
