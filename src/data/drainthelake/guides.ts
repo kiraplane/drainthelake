@@ -98,6 +98,7 @@ export const relatedRouteLabels: Record<string, string> = {
   '/guides/skill-tree-upgrades': 'Skill Tree Upgrades',
   '/guides/all-badges-guide': 'All Badges Guide',
   '/guides/phone-ending-guide': 'Phone Ending Guide',
+  '/guides/checkpoints-and-depth-route': 'Checkpoints and Depth Route',
   '/guides/codes-status-guide': 'Codes Status Guide',
 };
 
@@ -587,6 +588,90 @@ export const guides: Guide[] = [
         question: 'Does this site provide scripts?',
         answer:
           'No. It covers official gameplay and safe status checks, not executors, scripts, or modified clients.',
+      },
+    ],
+  },
+  {
+    slug: 'checkpoints-and-depth-route',
+    title: 'Drain the Lake Checkpoints and Depth Route',
+    seoTitle: 'Drain the Lake Checkpoints - Six Depth Route and Upgrades',
+    seoDescription:
+      'Clear Drain the Lake checkpoints with a six-depth route, bucket tests, token spending, Skill Tree priorities and safe phone-ending preparation.',
+    summary:
+      'Treat each checkpoint as a measurement point: time one clean cycle, identify whether carrying, draining, travel, or capacity is slow, then buy the upgrade that fixes that bottleneck.',
+    category: 'Progression',
+    difficulty: 'Intermediate',
+    coverImageUrl: videos.walkthrough.thumbnailUrl,
+    publishedAt: CHECKED_AT,
+    updatedAt: CHECKED_AT,
+    sourceStrategy: 'community_crosscheck',
+    video: videos.walkthrough,
+    videoSearchQueries: [
+      'Drain the Lake checkpoints depth route',
+      'Drain the Lake six checkpoints',
+      'Drain the Lake deepest route phone',
+    ],
+    sourceNotes:
+      'The six-checkpoint structure was cross-checked against the current exact-match competitor route and full walkthrough. Upgrade recommendations are bottleneck-based because exact economy values can change.',
+    tags: ['Checkpoints', 'Depth', 'Route'],
+    relatedRoutes: [
+      '/depth',
+      '/buckets',
+      '/skill-tree',
+      '/tools/route-efficiency',
+      '/guides/phone-ending-guide',
+    ],
+    body: [
+      {
+        heading: 'Use six checkpoints as route gates',
+        paragraphs: [
+          'The lake route can be divided into six depth checkpoints from the shallow opening loop to the final phone push. Do not rush past a gate simply because the next area is visible. A checkpoint is cleared when the current cycle remains reliable enough to fund the next improvement.',
+          'Record one full cycle at each gate: travel out, collect, carry, return, drain, and convert the result into progress. The slowest segment determines the next purchase.',
+        ],
+      },
+      {
+        heading: 'Checkpoint decision table',
+        paragraphs: [
+          'Early gates reward consistency and carrying comfort. Middle gates expose travel and drain-speed problems. Late gates punish poor capacity, weak routing, and spending that never addressed the actual delay.',
+        ],
+        bullets: [
+          'Checkpoint 1: learn the shortest legal collection-and-return loop.',
+          'Checkpoint 2: raise capacity only if trips fill before the route is complete.',
+          'Checkpoint 3: improve movement when empty travel dominates the timer.',
+          'Checkpoint 4: improve drain speed when unloading creates the queue.',
+          'Checkpoint 5: combine the best bucket with a tested Skill Tree path.',
+          'Checkpoint 6: preserve a stable loop and prepare the phone-ending push.',
+        ],
+      },
+      {
+        heading: 'Retest after every meaningful upgrade',
+        paragraphs: [
+          'Change one upgrade category, run the same route, and compare the cycle. If the timer barely changes, stop investing in that branch and reassess the bottleneck.',
+          'The route-efficiency tool is best used as a notebook for these tests, not as a source of invented universal times.',
+        ],
+      },
+      {
+        heading: 'Prepare the final depth and phone route',
+        paragraphs: [
+          'Before the final push, confirm that the bucket, capacity, movement, and drain loop all survive several cycles without resets. Then follow the phone-ending guide for the objective sequence instead of spending the final token reserve on cosmetic improvements.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'How many checkpoints are in the route?',
+        answer:
+          'This guide organizes current progression into six practical depth checkpoints, matching the route structure cross-checked in current walkthrough coverage.',
+      },
+      {
+        question: 'What should I upgrade at a checkpoint?',
+        answer:
+          'Time one full cycle and upgrade whichever segment is slowest: carrying, capacity, travel, or draining.',
+      },
+      {
+        question: 'When should I attempt the phone ending?',
+        answer:
+          'After the final checkpoint loop is stable and repeatable, then use the dedicated phone-ending route.',
       },
     ],
   },
