@@ -1,10 +1,10 @@
 import type { DataSource } from './types';
 
-export const CHECKED_AT = '2026-08-01';
-export const OFFICIAL_CHECKED_AT = '2026-08-01';
+export const CHECKED_AT = '2026-08-03';
+export const OFFICIAL_CHECKED_AT = '2026-08-03';
 
 export const officialGameFacts = {
-  name: '[🔱ATLANTIS] Drain the Lake',
+  name: '[ENDLESS] Drain the Lake',
   siteName: 'Drain the Lake Wiki',
   domain: 'https://www.drainthelake.top',
   canonicalHost: 'www.drainthelake.top',
@@ -15,11 +15,11 @@ export const officialGameFacts = {
   genre: 'Roblox incremental simulator',
   status: 'Live Roblox experience',
   createdAt: '2026-06-03T21:01:44.521Z',
-  updatedAt: '2026-07-25T16:37:20.327Z',
+  updatedAt: '2026-08-01T16:06:41.1241742Z',
   maxPlayers: 12,
-  activePlayersAtCheck: 19273,
-  visitsAtCheck: 118845412,
-  favoritesAtCheck: 357327,
+  activePlayersAtCheck: 5633,
+  visitsAtCheck: 126061117,
+  favoritesAtCheck: 370954,
   officialRobloxUrl:
     'https://www.roblox.com/games/138381251771774/Drain-the-Lake',
   officialDescriptionSummary:

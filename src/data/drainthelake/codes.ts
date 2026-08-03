@@ -1,7 +1,7 @@
 import { officialGameFacts } from './sources';
 import type { GameCode } from './types';
 
-export const CODE_CHECKED_AT = '2026-08-01';
+export const CODE_CHECKED_AT = '2026-08-03';
 
 export const activeCodes: GameCode[] = [];
 
@@ -36,7 +36,7 @@ export const codeCheckSummary = {
   checkedAt: CODE_CHECKED_AT,
   activeCount: activeCodes.length,
   status:
-    'No verified public Drain the Lake codes are confirmed as of July 11, 2026. Current social/search checks still point to no public code redemption box.',
+    'No verified public Drain the Lake codes are confirmed as of August 3, 2026. Current official, social, and search checks still point to no public code redemption box.',
   sourcesChecked: [
     {
       label: 'Roblox game page',

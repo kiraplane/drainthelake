@@ -502,6 +502,13 @@ export const topicPages: TopicPage[] = [
     ],
     sections: [
       {
+        heading: 'Current Endless update signal',
+        paragraphs: [
+          'The official Roblox title now carries an ENDLESS tag and the games API records an August 1 update. The public description still confirms the bucket, token, Skill Tree, depth, and phone loop but does not publish a detailed Endless changelog.',
+          'Treat Endless as a reason to retest the deepest repeat route, token return, and late Skill Tree bottleneck. Do not reuse the prior Atlantis label as if it were still the current event.',
+        ],
+      },
+      {
         heading: 'What to retest after an update',
         paragraphs: [
           'After any visible update, retest the starter loop, one deeper route, one Skill Tree spend, and the code page status. Do this before changing a long-term token plan, because small balance shifts can move the bottleneck.',
@@ -519,6 +526,11 @@ export const topicPages: TopicPage[] = [
         question: 'Where does the update date come from?',
         answer:
           'From the public Roblox universe API snapshot checked for this site.',
+      },
+      {
+        question: 'What is the current Drain the Lake update?',
+        answer:
+          'The current official Roblox title carries an ENDLESS tag. Exact Endless mechanics should be read from the live game because the public description does not provide a full changelog.',
       },
       {
         question: 'Do updates change upgrade advice?',
